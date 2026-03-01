@@ -1,7 +1,4 @@
-Below is a **GitHub-safe, ready-to-paste `README.md`**.
-It uses proper Markdown headings, bullet lists, and fenced code blocks so the formatting **stays intact on GitHub**.
-
-Copy everything into `README.md` (replace repo URL if needed).
+#RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM
 
 ````markdown
 # RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM
