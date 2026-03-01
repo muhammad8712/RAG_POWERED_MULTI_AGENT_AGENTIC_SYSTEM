@@ -24,7 +24,9 @@ env/
 
 # Local data / generated artifacts
 erp.db
-logs/
+logs/*.jsonl
+logs/*.log
+logs/*.txt
 storage/vector_store/
 vector_store/
 evaluation/results/
