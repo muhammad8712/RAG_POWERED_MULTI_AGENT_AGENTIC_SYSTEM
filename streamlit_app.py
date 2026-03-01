@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import traceback
-
 from dotenv import load_dotenv
 
 from sqlalchemy import create_engine
@@ -204,35 +203,35 @@ def paths_status():
     }
 
 
-def run_script(script_path: Path) -> tuple[bool, str]:
+def run_script(script_path: Path) -> dict:
     if not script_path.exists():
-        return False, f"Missing script: {script_path}"
-    try:
-        proc = subprocess.run(
-            [sys.executable, str(script_path)],
-            cwd=str(ROOT),
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        out = (proc.stdout or "") + ("\n" + proc.stderr if proc.stderr else "")
-        ok = proc.returncode == 0
-        return ok, out.strip()
-    except Exception as e:
-        return False, str(e)
+        return {"ok": False, "script": str(script_path), "returncode": None, "output": "Script not found."}
+
+    proc = subprocess.run(
+        [sys.executable, str(script_path)],
+        cwd=str(ROOT),
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    out = (proc.stdout or "").strip()
+    err = (proc.stderr or "").strip()
+    combined = out + ("\n" + err if err else "")
+    return {
+        "ok": proc.returncode == 0,
+        "script": str(script_path),
+        "returncode": proc.returncode,
+        "output": combined.strip(),
+    }
 
 
 def init_demo_data() -> dict:
-    results = {"policies": None, "db": None, "vector": None}
+    results = {}
 
-    ok, out = run_script(ROOT / "policies" / "generate_policies.py")
-    results["policies"] = {"ok": ok, "output": out}
-
-    ok, out = run_script(ROOT / "data" / "generate_data.py")
-    results["db"] = {"ok": ok, "output": out}
-
-    ok, out = run_script(ROOT / "document_ingestion.py")
-    results["vector"] = {"ok": ok, "output": out}
+    results["policies"] = run_script(ROOT / "policies" / "generate_policies.py")
+    results["db"] = run_script(ROOT / "data" / "generate_data.py")
+    results["vector_store"] = run_script(ROOT / "document_ingestion.py")
 
     return results
 
@@ -271,15 +270,10 @@ def load_system():
         )
 
     status = paths_status()
-
     if not status["has_db"]:
-        raise FileNotFoundError("Database file erp.db not found.\nRun: python data/generate_data.py")
-
+        raise FileNotFoundError("Database file erp.db not found.")
     if not status["has_vector"]:
-        raise FileNotFoundError(
-            "Vector store not found at storage/vector_store/index.faiss.\n"
-            "Run: python document_ingestion.py"
-        )
+        raise FileNotFoundError("Vector store not found (storage/vector_store/index.faiss).")
 
     llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
 
@@ -317,30 +311,56 @@ st.set_page_config(page_title="ERP Multi-Agent Assistant", page_icon="🧠", lay
 st.title("🧠 ERP Multi-Agent Assistant")
 st.caption("Orchestrator + Corrective RAG + Explainability")
 
+
+status = paths_status()
+
 with st.sidebar:
     st.subheader("System status")
-    s = paths_status()
     c1, c2 = st.columns(2)
-    c1.metric("erp.db", "OK" if s["has_db"] else "Missing")
-    c2.metric("vector_store", "OK" if s["has_vector"] else "Missing")
-    st.write(f"Policies: `{s['policies_dir']}`")
-    st.write(f"Vector store: `{s['vector_dir']}`")
-    st.write(f"Database: `{s['db_path']}`")
+    c1.metric("erp.db", "OK" if status["has_db"] else "Missing")
+    c2.metric("vector_store", "OK" if status["has_vector"] else "Missing")
 
-    if not s["has_db"] or not s["has_vector"]:
-        st.divider()
-        st.subheader("Initialize demo data")
+    st.write(f"Policies: `{status['policies_dir']}`")
+    st.write(f"Vector store: `{status['vector_dir']}`")
+    st.write(f"Database: `{status['db_path']}`")
 
-        st.caption("Creates mock PDFs, generates erp.db, and builds the FAISS vector store.")
+    st.divider()
+    st.subheader("Initialize demo data")
+    st.caption("Creates mock PDFs, generates erp.db, and builds the FAISS vector store.")
 
-        if st.button("Build DB + PDFs + Vector Store", use_container_width=True):
-            with st.spinner("Building demo data..."):
-                results = init_demo_data()
-            st.json(results)
+    if st.button("Build DB + PDFs + Vector Store", use_container_width=True):
+        with st.spinner("Building demo data..."):
+            build_results = init_demo_data()
 
-            st.cache_resource.clear()
-            st.success("Done. Reloading...")
-            st.rerun()
+        st.session_state["build_results"] = build_results
+
+        # Clear cached load_system (it may have cached an exception previously)
+        load_system.clear()
+
+        st.success("Build completed. Reloading…")
+        st.rerun()
+
+
+if "build_results" in st.session_state:
+    with st.expander("Last build output", expanded=not (status["has_db"] and status["has_vector"])):
+        st.json(st.session_state["build_results"])
+
+
+# IMPORTANT: don't crash the app when artifacts are missing.
+# Show a friendly message and stop BEFORE load_system() is called.
+missing = []
+if not status["has_db"]:
+    missing.append("erp.db")
+if not status["has_vector"]:
+    missing.append("vector_store")
+
+if missing:
+    st.warning(
+        "Missing runtime artifacts: "
+        + ", ".join(missing)
+        + ".\n\nUse the sidebar button **Build DB + PDFs + Vector Store**."
+    )
+    st.stop()
 
 
 try:
@@ -404,7 +424,11 @@ if raw:
         st.write(", ".join(agents_used) if agents_used else "—")
 
     with right:
-        blob = {"timestamp_utc": st.session_state.get("ts"), "query": st.session_state.get("last_query"), "raw_result": raw}
+        blob = {
+            "timestamp_utc": st.session_state.get("ts"),
+            "query": st.session_state.get("last_query"),
+            "raw_result": raw,
+        }
         st.download_button(
             label="Download JSON",
             data=json.dumps(blob, indent=2, default=json_serializer),
