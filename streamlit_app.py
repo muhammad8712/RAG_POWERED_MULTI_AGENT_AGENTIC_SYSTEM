@@ -1,5 +1,7 @@
 import json
 import os
+import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -9,8 +11,6 @@ import streamlit as st
 import traceback
 
 from dotenv import load_dotenv
-load_dotenv()
-
 
 from sqlalchemy import create_engine
 from langchain_groq import ChatGroq
@@ -27,10 +27,9 @@ from orchestration.graph import build_graph
 from orchestration.orchestrator_agent import OrchestratorAgent
 from orchestration.validator_agent import CorrectiveValidationAgent
 
-from logs.logger import log_event
 
-
-load_dotenv()
+ROOT = Path(__file__).resolve().parent
+load_dotenv(dotenv_path=ROOT / ".env", override=False)
 
 
 def get_config(key: str, default: str = "") -> str:
@@ -187,9 +186,9 @@ def render_execution_trace(fr: dict):
 
 
 def paths_status():
-    vector_dir = Path("storage/vector_store")
-    policies_dir = Path("policies")
-    db_path = Path("erp.db")
+    vector_dir = ROOT / "storage" / "vector_store"
+    policies_dir = ROOT / "policies"
+    db_path = ROOT / "erp.db"
 
     has_vector = vector_dir.exists() and (vector_dir / "index.faiss").exists()
     has_db = db_path.exists()
@@ -205,6 +204,62 @@ def paths_status():
     }
 
 
+def run_script(script_path: Path) -> tuple[bool, str]:
+    if not script_path.exists():
+        return False, f"Missing script: {script_path}"
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(script_path)],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        out = (proc.stdout or "") + ("\n" + proc.stderr if proc.stderr else "")
+        ok = proc.returncode == 0
+        return ok, out.strip()
+    except Exception as e:
+        return False, str(e)
+
+
+def init_demo_data() -> dict:
+    results = {"policies": None, "db": None, "vector": None}
+
+    ok, out = run_script(ROOT / "policies" / "generate_policies.py")
+    results["policies"] = {"ok": ok, "output": out}
+
+    ok, out = run_script(ROOT / "data" / "generate_data.py")
+    results["db"] = {"ok": ok, "output": out}
+
+    ok, out = run_script(ROOT / "document_ingestion.py")
+    results["vector"] = {"ok": ok, "output": out}
+
+    return results
+
+
+def log_event(event: dict, filename: str = "events.jsonl"):
+    log_dir = ROOT / "logs"
+    log_dir.mkdir(exist_ok=True)
+    path = log_dir / filename
+
+    payload = {"ts_utc": datetime.utcnow().isoformat(), **event}
+
+    def to_json_safe(obj):
+        try:
+            import numpy as _np
+
+            if isinstance(obj, _np.generic):
+                return obj.item()
+            if isinstance(obj, _np.ndarray):
+                return obj.tolist()
+        except Exception:
+            pass
+        return str(obj)
+
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(payload, ensure_ascii=False, default=to_json_safe) + "\n")
+
+
 @st.cache_resource
 def load_system():
     key = ensure_groq_key()
@@ -218,10 +273,7 @@ def load_system():
     status = paths_status()
 
     if not status["has_db"]:
-        raise FileNotFoundError(
-            "Database file erp.db not found.\n"
-            "Run: python data/generate_data.py"
-        )
+        raise FileNotFoundError("Database file erp.db not found.\nRun: python data/generate_data.py")
 
     if not status["has_vector"]:
         raise FileNotFoundError(
@@ -238,7 +290,7 @@ def load_system():
         allow_dangerous_deserialization=True,
     )
 
-    engine = create_engine("sqlite:///erp.db", echo=False)
+    engine = create_engine(f"sqlite:///{status['db_path'].as_posix()}", echo=False)
 
     document_agent = DocumentAgent(vector_db, llm, top_k=5)
     database_agent = DatabaseAgent(engine, llm)
@@ -274,12 +326,21 @@ with st.sidebar:
     st.write(f"Policies: `{s['policies_dir']}`")
     st.write(f"Vector store: `{s['vector_dir']}`")
     st.write(f"Database: `{s['db_path']}`")
-    if not s["has_db"]:
-        st.info("Build DB: `python data/generate_data.py`")
-    if not s["has_vector"]:
-        st.info("Build vector store: `python document_ingestion.py`")
-    if not s["has_policies"]:
-        st.warning("No PDFs found in policies/. If you use mock PDFs, run: `python policies/generate_policies.py`")
+
+    if not s["has_db"] or not s["has_vector"]:
+        st.divider()
+        st.subheader("Initialize demo data")
+
+        st.caption("Creates mock PDFs, generates erp.db, and builds the FAISS vector store.")
+
+        if st.button("Build DB + PDFs + Vector Store", use_container_width=True):
+            with st.spinner("Building demo data..."):
+                results = init_demo_data()
+            st.json(results)
+
+            st.cache_resource.clear()
+            st.success("Done. Reloading...")
+            st.rerun()
 
 
 try:
@@ -312,9 +373,7 @@ if run_btn:
         with st.spinner("Running agents..."):
             raw = graph.invoke({"query": query.strip()})
 
-        log_event(
-            {"type": "query_run", "query": query.strip(), "final_response": raw.get("final_response")}
-        )
+        log_event({"type": "query_run", "query": query.strip(), "final_response": raw.get("final_response")})
 
         fr_tmp = raw.get("final_response") or {}
         val = fr_tmp.get("validation") or {}
@@ -345,11 +404,7 @@ if raw:
         st.write(", ".join(agents_used) if agents_used else "—")
 
     with right:
-        blob = {
-            "timestamp_utc": st.session_state.get("ts"),
-            "query": st.session_state.get("last_query"),
-            "raw_result": raw,
-        }
+        blob = {"timestamp_utc": st.session_state.get("ts"), "query": st.session_state.get("last_query"), "raw_result": raw}
         st.download_button(
             label="Download JSON",
             data=json.dumps(blob, indent=2, default=json_serializer),
@@ -360,23 +415,11 @@ if raw:
 
     render_answer(fr.get("answer"))
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(
-        ["📄 Documents", "🗄️ Database", "✅ Validation", "🧭 Trace", "🧾 Raw JSON"]
-    )
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📄 Documents", "🗄️ Database", "✅ Validation", "🧭 Trace", "🧾 Raw JSON"])
 
     with tab1:
         st.subheader("Sources & similarity scores")
         render_sources_and_scores(fr)
-
-        doc_out = raw.get("document_output") or {}
-        chunks = doc_out.get("chunks")
-        if chunks:
-            st.subheader("Retrieved chunks")
-            for i, ch in enumerate(chunks[:8], start=1):
-                with st.expander(
-                    f"Chunk {i} — {ch.get('source')} p{ch.get('page')} (score={ch.get('score')})"
-                ):
-                    st.write(ch.get("text", ""))
 
     with tab2:
         st.subheader("SQL + results")
