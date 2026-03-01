@@ -2,16 +2,16 @@ import json
 import os
 import subprocess
 import sys
+import traceback
 from datetime import datetime
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import streamlit as st
-import traceback
 from dotenv import load_dotenv
-
 from sqlalchemy import create_engine
+
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -227,13 +227,11 @@ def run_script(script_path: Path) -> dict:
 
 
 def init_demo_data() -> dict:
-    results = {}
-
-    results["policies"] = run_script(ROOT / "policies" / "generate_policies.py")
-    results["db"] = run_script(ROOT / "data" / "generate_data.py")
-    results["vector_store"] = run_script(ROOT / "document_ingestion.py")
-
-    return results
+    return {
+        "policies": run_script(ROOT / "policies" / "generate_policies.py"),
+        "db": run_script(ROOT / "data" / "generate_mock_erp.py"),
+        "vector_store": run_script(ROOT / "ingestion" / "document_ingestion.py"),
+    }
 
 
 def log_event(event: dict, filename: str = "events.jsonl"):
@@ -246,7 +244,6 @@ def log_event(event: dict, filename: str = "events.jsonl"):
     def to_json_safe(obj):
         try:
             import numpy as _np
-
             if isinstance(obj, _np.generic):
                 return obj.item()
             if isinstance(obj, _np.ndarray):
@@ -271,9 +268,9 @@ def load_system():
 
     status = paths_status()
     if not status["has_db"]:
-        raise FileNotFoundError("Database file erp.db not found.")
+        raise FileNotFoundError("Database file erp.db not found. Run: python data/generate_mock_erp.py")
     if not status["has_vector"]:
-        raise FileNotFoundError("Vector store not found (storage/vector_store/index.faiss).")
+        raise FileNotFoundError("Vector store not found. Run: python ingestion/document_ingestion.py")
 
     llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
 
@@ -334,9 +331,7 @@ with st.sidebar:
 
         st.session_state["build_results"] = build_results
 
-        # Clear cached load_system (it may have cached an exception previously)
         load_system.clear()
-
         st.success("Build completed. Reloading…")
         st.rerun()
 
@@ -346,8 +341,6 @@ if "build_results" in st.session_state:
         st.json(st.session_state["build_results"])
 
 
-# IMPORTANT: don't crash the app when artifacts are missing.
-# Show a friendly message and stop BEFORE load_system() is called.
 missing = []
 if not status["has_db"]:
     missing.append("erp.db")
