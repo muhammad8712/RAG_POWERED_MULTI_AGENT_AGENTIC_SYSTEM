@@ -1,41 +1,61 @@
-#RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM
-
-````markdown
 # RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM
 
-## Overview
+
+```markdown
+# 🧠 RAG-Powered Multi-Agent ERP Assistant  
+### Agentic + Corrective RAG Architecture with LangGraph
+
+<p align="center">
+  <b>Multi-Agent Conversational System for Enterprise ERP Workflows</b><br>
+  Retrieval-Augmented Generation · Structured Data Querying · Corrective Validation · Explainability
+</p>
+
+---
+
+## 🚀 Overview
 
 This project implements a **RAG-powered multi-agent conversational assistant for ERP systems**.
 
-The assistant can answer questions using:
+The system intelligently answers questions using:
 
-- 📄 Policy documents (PDFs) via vector search (FAISS)
-- 🗄️ Structured ERP database (SQLite)
-- 🌐 External APIs (read-only GET requests)
-- 🧠 Multi-agent reasoning for composite queries
-- ✅ Corrective validation loop to prevent unsupported answers
-- 🔎 Explainability layer with traceability and source reporting
+- 📄 **Policy Documents (PDFs)** via FAISS vector search  
+- 🗄️ **Structured ERP Database (SQLite)**  
+- 🌐 **External APIs** (read-only GET integration)  
+- 🧠 **Multi-agent reasoning** for composite queries  
+- ✅ **Corrective validation loop** to prevent unsupported responses  
+- 🔎 **Explainability layer** with full execution trace  
 
-The architecture is built using **LangGraph**, combining orchestration, retrieval, database querying, validation, and explainability.
-
----
-
-## System Architecture
-
-Workflow:
-
-1. User Query
-2. Intent Classifier
-3. Orchestrator (Plan Generator)
-4. Worker Agents (Document / Database / API)
-5. Reasoning Agent (if needed)
-6. Validator (Corrective Loop)
-7. Explainability Layer
-8. Final Response
+Built with **LangGraph**, this system demonstrates a production-style Agentic RAG pipeline suitable for enterprise knowledge workflows.
 
 ---
 
-## Project Structure
+# 🏗️ System Architecture
+
+## Execution Flow
+
+```
+
+User Query
+↓
+Intent Classifier
+↓
+Orchestrator (Plan Generator)
+↓
+Worker Agents (Document / Database / API)
+↓
+Reasoning Agent (if needed)
+↓
+Validator (Corrective Loop)
+↓
+Explainability Layer
+↓
+Final Response
+
+````
+
+---
+
+# 📁 Project Structure
 
 ```text
 agents/
@@ -64,8 +84,8 @@ logs/
   logger.py
 
 policies/
-  (PDF files go here)
   generate_policies.py
+  (generated mock PDFs)
 
 storage/
   vector_store/  (generated)
@@ -79,53 +99,57 @@ README.md
 
 ---
 
-## Installation & Setup
+# ⚙️ Installation & Setup
 
-### 1) Clone the repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/muhammad8712/RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM.git
 cd RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM
 ```
 
-### 2) Create and activate a virtual environment
+---
 
-#### Option A: Conda
+## 2️⃣ Create Virtual Environment
+
+### Using Conda
 
 ```bash
 conda create -n myenv python=3.11
 conda activate myenv
 ```
 
-#### Option B: venv (recommended if you do not use Conda)
+### Using venv
 
 ```bash
 python -m venv myenv
-# Windows:
+# Windows
 myenv\Scripts\activate
-# macOS/Linux:
+# macOS/Linux
 source myenv/bin/activate
 ```
 
-### 3) Install dependencies
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r Requirements.txt
 ```
-
-### 4) Set environment variables
-
-Create a `.env` file in the project root:
-
-```text
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-**Do not commit** `.env` to GitHub.
 
 ---
 
-## Database Setup (SQLite)
+## 4️⃣ Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+---
+
+# 🗄️ Database Setup
 
 Generate synthetic ERP data:
 
@@ -135,80 +159,84 @@ python data/generate_data.py
 
 This creates:
 
-* `erp.db`
+```
+erp.db
+```
 
-Tables:
+Tables included:
 
-* `vendors`
-* `invoices`
-* `purchase_orders`
-* `payments`
+* vendors
+* invoices
+* purchase_orders
+* payments
 
 ---
 
-## Policies (Mock PDFs)
+# 📄 Policy Document Setup
 
-Generate mock policy PDFs:
+Generate mock ERP policies:
 
 ```bash
 python policies/generate_policies.py
 ```
 
-This creates PDFs inside:
+PDFs will be created inside:
 
-* `policies/`
+```
+policies/
+```
 
 ---
 
-## Document Ingestion (Vector Store)
+# 🔍 Document Ingestion (Vector Store)
 
-Build the FAISS vector index:
+Build the FAISS index:
 
 ```bash
 python document_ingestion.py
 ```
 
-This creates:
+This generates:
 
-```text
+```
 storage/vector_store/
-  index.faiss
-  index.pkl
+  ├── index.faiss
+  └── index.pkl
 ```
 
-**Note:** Ingestion must be done before running the assistant.
+⚠️ Must be executed before running the assistant.
 
 ---
 
-## Running the Application
+# 🖥️ Running the Application
 
-### Option 1: Streamlit Web Interface (Recommended)
+## 🌐 Streamlit Web Interface (Recommended)
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-UI features:
+### UI Features
 
-* Query input
-* Answer display
-* Document sources + similarity scores
-* SQL query + database results
-* Validation output
+* Natural language query input
+* Document citation display
+* Similarity scores
+* SQL query + result table
+* Validation report
 * Execution trace
-* JSON download
+* Downloadable JSON output
 
-### Option 2: Command Line Interface
+---
+
+## 💻 Command Line Interface
 
 ```bash
 python main_cli.py
 ```
 
-Enter your ERP query when prompted.
-
 ---
 
-## Running Evaluation
+# 🧪 Evaluation Pipeline
 
 Run benchmark queries:
 
@@ -216,9 +244,9 @@ Run benchmark queries:
 python evaluation/run_eval.py
 ```
 
-Results are saved to:
+Results saved to:
 
-```text
+```
 evaluation/results/
 ```
 
@@ -227,127 +255,131 @@ Each result contains:
 * Query ID
 * Query type
 * Final response
-* Full orchestration output
+* Full orchestration trace
 
 ---
 
-## Core Components
+# 🧠 Core System Components
 
-### Document Agent
+## 📄 Document Agent
 
-* Performs FAISS similarity search
-* Retrieves top-k document chunks
-* Generates grounded answers using retrieved context
-* Returns sources and similarity scores
+* Vector retrieval via FAISS
+* Top-k chunk selection
+* Context-grounded generation
+* Source + similarity tracking
 
-### Database Agent
+## 🗄️ Database Agent
 
-* Converts user question → SQL query
-* Enforces SELECT-only queries
-* Blocks unsafe SQL keywords
-* Returns structured row results
+* LLM-to-SQL conversion
+* SELECT-only enforcement
+* SQL injection protection
+* Structured result output
 
-### API Agent
+## 🌐 API Agent
 
-* Safe GET-only requests
-* Optional allowlist validation
-* Structured response
+* Safe GET-only calls
+* Optional allowlist restriction
+* Structured JSON responses
 
-### Reasoning Agent
+## 🧠 Reasoning Agent
 
-* Combines document + database evidence
-* Produces final decision and explanation
-* Used for composite queries
+* Multi-source synthesis
+* Combines structured + unstructured evidence
+* Produces final decision + explanation
 
-### Validator Agent (Corrective RAG)
+## ✅ Validator Agent (Corrective RAG)
 
-* Checks if answer is supported by evidence
-* Detects:
+* Checks evidence sufficiency
+* Detects unsupported numeric claims
+* Triggers corrective tool execution
+* Iteration-limited retry loop
 
-  * Empty retrieval
-  * Low similarity scores
-  * Missing DB results
-  * Unsupported numeric claims
-* Can trigger corrective tool re-execution
-* Stops after configurable iteration limit
+## 🔎 Explainability Agent
 
-### Explainability Agent
-
-* Packages final answer
+* Final answer packaging
 * Lists agents used
 * Includes:
 
   * Document sources
-  * Similarity scores
   * SQL query
+  * Similarity scores
   * Validation result
   * Execution trace
 
 ---
 
-## Logging
+# 📊 Logging & Monitoring
 
-Logs are stored as JSONL:
+Logs stored as JSONL:
 
-```text
+```
 logs/events.jsonl
 logs/validation.jsonl
 ```
 
-Each entry may contain:
+Each log entry includes:
 
 * Timestamp
 * Query
 * Final response
 * Validation status
 
-Used for evaluation and analysis.
+Useful for:
+
+* Performance evaluation
+* Failure analysis
+* Research metrics
 
 ---
 
-## Safety Features
+# 🛡️ Safety & Robustness
 
 * SQL injection protection
-* SELECT-only enforcement
-* Blocked unsafe SQL keywords
-* API allowlist support
-* Evidence-backed validation
-* Iteration-limited corrective loop
+* Restricted SQL operations (SELECT-only)
+* API allowlist validation
+* Evidence-backed validation loop
+* Bounded corrective iteration
+* Transparent execution trace
 
 ---
 
-## Deployment (Streamlit Community Cloud)
+# 🌐 Deployment
 
-**Note:** GitHub Pages cannot host Streamlit (Streamlit is not a static site).
+> ⚠ GitHub Pages cannot host Streamlit apps (static only).
 
-Steps:
+## Recommended: Streamlit Community Cloud
 
-1. Push the project to GitHub
-2. Go to Streamlit Community Cloud
-3. Create a new app
-4. Select repo + branch
+1. Push project to GitHub
+2. Open Streamlit Community Cloud
+3. Create new app
+4. Select repository + branch
 5. Set main file: `streamlit_app.py`
-6. Add secrets in Streamlit Cloud settings:
+6. Add secret:
 
-```text
+```
 GROQ_API_KEY = "your_key_here"
 ```
 
-**Important:** Your deployment must have access to:
+Ensure:
 
-* `erp.db` (generate in deployment or ship a demo DB)
-* `storage/vector_store/` (build in deployment by running ingestion)
+* Database exists (generate during deployment)
+* Vector store is built (run ingestion during deployment)
 
 ---
 
-## Research Context
+# 🎓 Research Context
 
-This system demonstrates:
+This project demonstrates:
 
-* Agentic RAG architecture
-* Corrective validation loop
-* Multi-agent orchestration
-* Evidence-grounded reasoning
-* Explainability in enterprise QA systems
+* Agentic RAG Architecture
+* Corrective Validation Loop
+* Multi-Agent Orchestration with LangGraph
+* Evidence-Grounded Reasoning
+* Explainability for Enterprise AI Systems
 
-````
+---
+
+
+
+Tell me what direction you want: **academic-polished** or **portfolio-polished**.
+```
