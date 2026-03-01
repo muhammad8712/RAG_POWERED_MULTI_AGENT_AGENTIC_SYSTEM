@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pkl
+*.log
+*.tmp
+
+# Environments
+.venv/
+venv/
+myenv/
+env/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets
+.env
+*.env
+
+# Local data / generated artifacts
+erp.db
+logs/
+storage/vector_store/
+vector_store/
+evaluation/results/
+
+# Streamlit
+.streamlit/secrets.toml
