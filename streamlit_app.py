@@ -1,15 +1,16 @@
 import json
 import os
 from datetime import datetime
-import streamlit as st
-import pandas as pd
-import numpy as np
-import sys
 from pathlib import Path
-from dotenv import load_dotenv
+
+import numpy as np
+import pandas as pd
+import streamlit as st
 import traceback
 
+from dotenv import load_dotenv
 load_dotenv()
+
 
 from sqlalchemy import create_engine
 from langchain_groq import ChatGroq
@@ -29,14 +30,26 @@ from orchestration.validator_agent import CorrectiveValidationAgent
 from logs.logger import log_event
 
 
-st.set_page_config(
-    page_title="ERP Multi-Agent Assistant",
-    page_icon="🧠",
-    layout="wide",
-)
+load_dotenv()
 
-st.title("🧠 ERP Multi-Agent Assistant")
-st.caption("Orchestrator + Agentic/Corrective RAG + Explainability")
+
+def get_config(key: str, default: str = "") -> str:
+    val = os.getenv(key)
+    if val:
+        return str(val)
+    try:
+        if key in st.secrets:
+            return str(st.secrets[key])
+    except Exception:
+        pass
+    return default
+
+
+def ensure_groq_key() -> str:
+    key = get_config("GROQ_API_KEY", "")
+    if key:
+        os.environ["GROQ_API_KEY"] = key
+    return key
 
 
 def json_serializer(obj):
@@ -69,53 +82,20 @@ def normalize_final_response(fr: dict) -> dict:
     }
 
 
-@st.cache_resource
-def load_system():
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
-
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vector_db = FAISS.load_local(
-        "storage/vector_store",
-        embeddings,
-        allow_dangerous_deserialization=True
-    )
-
-    engine = create_engine("sqlite:///erp.db", echo=False)
-
-    document_agent = DocumentAgent(vector_db, llm, top_k=5)
-    database_agent = DatabaseAgent(engine, llm)
-    api_agent = APIAgent(base_urls=["http://localhost:8000/"], timeout=15)
-    reasoning_agent = ReasoningAgent(llm)
-    explainability_agent = ExplainabilityAgent()
-
-    orchestrator_agent = OrchestratorAgent(llm)
-    validator_agent = CorrectiveValidationAgent()
-
-    graph = build_graph(
-        document_agent=document_agent,
-        database_agent=database_agent,
-        api_agent=api_agent,
-        reasoning_agent=reasoning_agent,
-        explainability_agent=explainability_agent,
-        orchestrator_agent=orchestrator_agent,
-        validator_agent=validator_agent,
-    )
-    return graph
-
-
 def render_answer(answer):
     if answer is None:
         st.warning("No answer returned.")
         return
-
     if isinstance(answer, str):
         st.markdown(answer)
-    elif isinstance(answer, dict):
+        return
+    if isinstance(answer, dict):
         st.json(answer)
-    elif isinstance(answer, list):
-        st.dataframe(pd.DataFrame(answer))
-    else:
-        st.write(answer)
+        return
+    if isinstance(answer, list):
+        st.dataframe(pd.DataFrame(answer), use_container_width=True)
+        return
+    st.write(answer)
 
 
 def render_sources_and_scores(fr: dict):
@@ -181,7 +161,6 @@ def render_validation(fr: dict):
         st.subheader("Issues")
         issues = v.get("issues", [])
         st.json(issues) if issues else st.write("None")
-
     with col2:
         st.subheader("Next actions")
         na = v.get("next_actions", [])
@@ -207,11 +186,107 @@ def render_execution_trace(fr: dict):
     st.json(trace)
 
 
+def paths_status():
+    vector_dir = Path("storage/vector_store")
+    policies_dir = Path("policies")
+    db_path = Path("erp.db")
+
+    has_vector = vector_dir.exists() and (vector_dir / "index.faiss").exists()
+    has_db = db_path.exists()
+    has_policies = policies_dir.exists() and any(policies_dir.glob("*.pdf"))
+
+    return {
+        "vector_dir": vector_dir,
+        "policies_dir": policies_dir,
+        "db_path": db_path,
+        "has_vector": has_vector,
+        "has_db": has_db,
+        "has_policies": has_policies,
+    }
+
+
+@st.cache_resource
+def load_system():
+    key = ensure_groq_key()
+    if not key:
+        raise RuntimeError(
+            "GROQ_API_KEY is not set.\n"
+            "Local: create a .env file with GROQ_API_KEY=...\n"
+            "Streamlit Cloud: set GROQ_API_KEY in App Settings → Secrets."
+        )
+
+    status = paths_status()
+
+    if not status["has_db"]:
+        raise FileNotFoundError(
+            "Database file erp.db not found.\n"
+            "Run: python data/generate_data.py"
+        )
+
+    if not status["has_vector"]:
+        raise FileNotFoundError(
+            "Vector store not found at storage/vector_store/index.faiss.\n"
+            "Run: python document_ingestion.py"
+        )
+
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
+
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    vector_db = FAISS.load_local(
+        str(status["vector_dir"]),
+        embeddings,
+        allow_dangerous_deserialization=True,
+    )
+
+    engine = create_engine("sqlite:///erp.db", echo=False)
+
+    document_agent = DocumentAgent(vector_db, llm, top_k=5)
+    database_agent = DatabaseAgent(engine, llm)
+    api_agent = APIAgent(base_urls=["http://localhost:8000/"], timeout=15)
+    reasoning_agent = ReasoningAgent(llm)
+    explainability_agent = ExplainabilityAgent()
+
+    orchestrator_agent = OrchestratorAgent(llm)
+    validator_agent = CorrectiveValidationAgent()
+
+    graph = build_graph(
+        document_agent=document_agent,
+        database_agent=database_agent,
+        api_agent=api_agent,
+        reasoning_agent=reasoning_agent,
+        explainability_agent=explainability_agent,
+        orchestrator_agent=orchestrator_agent,
+        validator_agent=validator_agent,
+    )
+    return graph
+
+
+st.set_page_config(page_title="ERP Multi-Agent Assistant", page_icon="🧠", layout="wide")
+st.title("🧠 ERP Multi-Agent Assistant")
+st.caption("Orchestrator + Corrective RAG + Explainability")
+
+with st.sidebar:
+    st.subheader("System status")
+    s = paths_status()
+    c1, c2 = st.columns(2)
+    c1.metric("erp.db", "OK" if s["has_db"] else "Missing")
+    c2.metric("vector_store", "OK" if s["has_vector"] else "Missing")
+    st.write(f"Policies: `{s['policies_dir']}`")
+    st.write(f"Vector store: `{s['vector_dir']}`")
+    st.write(f"Database: `{s['db_path']}`")
+    if not s["has_db"]:
+        st.info("Build DB: `python data/generate_data.py`")
+    if not s["has_vector"]:
+        st.info("Build vector store: `python document_ingestion.py`")
+    if not s["has_policies"]:
+        st.warning("No PDFs found in policies/. If you use mock PDFs, run: `python policies/generate_policies.py`")
+
+
 try:
     graph = load_system()
-    st.success("System loaded")
+    st.success("✅ System loaded")
 except Exception:
-    st.error("Failed to load system")
+    st.error("❌ Failed to load system")
     st.code(traceback.format_exc())
     st.stop()
 
@@ -237,20 +312,17 @@ if run_btn:
         with st.spinner("Running agents..."):
             raw = graph.invoke({"query": query.strip()})
 
-        log_event({
-            "type": "query_run",
-            "query": query.strip(),
-            "final_response": raw.get("final_response"),
-        })
+        log_event(
+            {"type": "query_run", "query": query.strip(), "final_response": raw.get("final_response")}
+        )
 
         fr_tmp = raw.get("final_response") or {}
-        val = (fr_tmp.get("validation") or {})
+        val = fr_tmp.get("validation") or {}
         if val.get("status") in ("NEEDS_MORE_INFO", "FAIL"):
-            log_event({
-                "type": "validation_issue",
-                "query": query.strip(),
-                "validation": val
-            }, filename="validation.jsonl")
+            log_event(
+                {"type": "validation_issue", "query": query.strip(), "validation": val},
+                filename="validation.jsonl",
+            )
 
         st.session_state["last_result"] = raw
         st.session_state["last_query"] = query.strip()
@@ -288,17 +360,23 @@ if raw:
 
     render_answer(fr.get("answer"))
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📄 Documents",
-        "🗄️ Database",
-        "✅ Validation",
-        "🧭 Trace",
-        "🧾 Raw JSON",
-    ])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(
+        ["📄 Documents", "🗄️ Database", "✅ Validation", "🧭 Trace", "🧾 Raw JSON"]
+    )
 
     with tab1:
         st.subheader("Sources & similarity scores")
         render_sources_and_scores(fr)
+
+        doc_out = raw.get("document_output") or {}
+        chunks = doc_out.get("chunks")
+        if chunks:
+            st.subheader("Retrieved chunks")
+            for i, ch in enumerate(chunks[:8], start=1):
+                with st.expander(
+                    f"Chunk {i} — {ch.get('source')} p{ch.get('page')} (score={ch.get('score')})"
+                ):
+                    st.write(ch.get("text", ""))
 
     with tab2:
         st.subheader("SQL + results")
