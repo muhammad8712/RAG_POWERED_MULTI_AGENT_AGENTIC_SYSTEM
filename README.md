@@ -377,9 +377,3 @@ This project demonstrates:
 * Evidence-Grounded Reasoning
 * Explainability for Enterprise AI Systems
 
----
-
-
-
-Tell me what direction you want: **academic-polished** or **portfolio-polished**.
-```
