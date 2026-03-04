@@ -1,32 +1,6 @@
-````markdown
-# 🧠 RAG-Powered Multi-Agent ERP Assistant
-**Agentic + Corrective RAG with LangGraph · Documents (FAISS) · SQL (SQLite) · APIs · Explainability**
+**RAG_POWERED_MULTI_AGENT_AGENTIC_SYSTEM**
 
-<p align="center">
-  <img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-Orchestration-blue">
-  <img alt="RAG" src="https://img.shields.io/badge/RAG-FAISS%20Vector%20Search-purple">
-  <img alt="SQLite" src="https://img.shields.io/badge/Database-SQLite-lightgrey">
-  <img alt="Streamlit" src="https://img.shields.io/badge/UI-Streamlit-ff4b4b">
-</p>
-
----
-
-## 📌 Overview
-
-This repository contains a **RAG-powered multi-agent conversational assistant** designed for **ERP-style workflows**.  
-It answers user questions by selecting the right tools (documents, database, APIs), validating evidence, and returning a final response with traceability.
-
-### What it can do
-
-- 📄 **Policy / process Q&A** from PDFs using **FAISS retrieval** (RAG)
-- 🗄️ **ERP data Q&A** using **SQLite** (vendors, invoices, purchase orders, payments)
-- 🌐 **Read-only API calls** (GET) for system integrations
-- 🧠 **Multi-agent reasoning** for composite queries (docs + database)
-- ✅ **Corrective validation loop** that detects weak evidence and re-runs tools when required
-- 🔎 **Explainability output**: sources, similarity scores, SQL query, validation report, and execution trace
-
----
-
+````
 ## 🧱 Architecture
 
 ### Execution flow
