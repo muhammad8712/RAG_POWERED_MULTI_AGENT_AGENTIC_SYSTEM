@@ -1,0 +1,1198 @@
+product_id,category,name,price_usd,cost_usd,margin_usd
+1,Electronics,SSD MediumBlue 149,570.28,352.69,217.59
+2,Electronics,Keyboard DeepPink 696,498.13,263.13,235.0
+3,Electronics,Headphones Orchid 188,548.53,309.6,238.93
+4,Electronics,Smartwatch BurlyWood 664,268.36,153.56,114.8
+5,Electronics,Smartwatch Cornsilk 328,63.69,42.65,21.04
+6,Electronics,Headphones WhiteSmoke 326,358.95,222.19,136.76
+7,Electronics,Headphones DarkGray 529,347.3,187.53,159.77
+8,Electronics,Mouse Moccasin 673,338.19,227.02,111.17
+9,Electronics,Mouse Chartreuse 292,88.74,59.58,29.16
+10,Electronics,SSD Tan 677,85.54,61.04,24.5
+11,Electronics,Headphones HotPink 644,382.84,248.43,134.41
+12,Electronics,Smartwatch Blue 564,473.02,302.58,170.44
+13,Electronics,SSD DarkCyan 815,200.87,148.31,52.56
+14,Electronics,Webcam PowderBlue 606,76.66,45.24,31.42
+15,Electronics,SSD PeachPuff 174,445.78,261.4,184.38
+16,Electronics,Keyboard CornflowerBlue 450,321.8,176.83,144.97
+17,Electronics,Mouse LawnGreen 784,561.96,352.07,209.89
+18,Electronics,Keyboard DarkGoldenRod 996,465.81,312.98,152.83
+19,Electronics,SSD Peru 608,223.87,135.45,88.42
+20,Electronics,Speaker Chocolate 376,69.19,36.54,32.65
+21,Electronics,Speaker DarkRed 848,427.31,221.99,205.32
+22,Electronics,Monitor Ivory 941,398.86,318.26,80.6
+23,Electronics,Speaker Chocolate 784,192.22,118.36,73.86
+24,Electronics,SSD Orchid 272,42.86,27.37,15.49
+25,Electronics,Keyboard BurlyWood 394,311.41,176.09,135.32
+26,Electronics,Mouse Indigo 992,450.87,279.26,171.61
+27,Electronics,Speaker Brown 662,75.93,48.2,27.73
+28,Electronics,Monitor DarkSlateBlue 984,533.53,397.9,135.63
+29,Electronics,Monitor LightSteelBlue 799,432.65,344.36,88.29
+30,Electronics,Smartwatch PeachPuff 280,575.91,314.03,261.88
+31,Electronics,Mouse DarkTurquoise 596,162.22,92.47,69.75
+32,Electronics,Mouse Yellow 529,179.77,90.11,89.66
+33,Electronics,SSD DarkOrchid 228,377.59,224.89,152.7
+34,Electronics,Headphones Linen 995,290.29,221.0,69.29
+35,Electronics,Smartwatch Gainsboro 593,256.9,158.82,98.08
+36,Electronics,Smartwatch DarkKhaki 313,65.48,34.06,31.42
+37,Electronics,Speaker Gold 153,122.51,73.75,48.76
+38,Electronics,Keyboard Navy 203,30.13,16.43,13.7
+39,Electronics,SSD DarkGray 312,379.83,197.93,181.9
+40,Electronics,Smartwatch Coral 455,114.67,66.01,48.66
+41,Electronics,SSD Chocolate 599,300.27,160.53,139.74
+42,Electronics,Speaker GreenYellow 247,303.83,180.34,123.49
+43,Electronics,Keyboard SpringGreen 590,457.31,330.23,127.08
+44,Electronics,Mouse White 640,324.31,182.12,142.19
+45,Electronics,SSD Pink 127,113.56,75.28,38.28
+46,Electronics,Monitor Maroon 812,587.75,446.1,141.65
+47,Electronics,Monitor SeaGreen 464,325.49,251.43,74.06
+48,Electronics,Webcam SaddleBrown 437,333.58,244.75,88.83
+49,Electronics,Webcam MistyRose 876,379.54,279.54,100.0
+50,Electronics,Webcam Lime 857,489.46,364.89,124.57
+51,Electronics,Webcam LightBlue 848,143.95,93.26,50.69
+52,Electronics,Headphones Gainsboro 583,594.07,437.85,156.22
+53,Electronics,Monitor LemonChiffon 452,140.38,95.67,44.71
+54,Electronics,Speaker Cyan 457,490.88,351.93,138.95
+55,Electronics,SSD Lime 581,75.91,40.28,35.63
+56,Electronics,Webcam Violet 724,222.51,143.47,79.04
+57,Electronics,Headphones Snow 918,303.3,211.06,92.24
+58,Electronics,Keyboard MediumSpringGreen 497,505.75,271.07,234.68
+59,Electronics,Webcam RosyBrown 908,302.48,167.44,135.04
+60,Electronics,SSD LightSlateGray 839,79.45,62.28,17.17
+61,Electronics,Smartwatch Cornsilk 186,294.0,212.56,81.44
+62,Electronics,Mouse DarkOrchid 254,126.9,68.29,58.61
+63,Electronics,Speaker Thistle 946,489.71,266.33,223.38
+64,Electronics,Speaker PeachPuff 661,404.64,244.86,159.78
+65,Electronics,Mouse FireBrick 843,42.2,31.22,10.98
+66,Electronics,Keyboard MediumSpringGreen 544,330.15,257.55,72.6
+67,Electronics,Webcam DeepPink 357,500.91,282.17,218.74
+68,Electronics,Webcam SlateGray 700,196.99,112.71,84.28
+69,Electronics,SSD PeachPuff 234,177.84,111.28,66.56
+70,Electronics,Headphones BlueViolet 569,548.71,332.59,216.12
+71,Electronics,Smartwatch Crimson 233,501.47,382.85,118.62
+72,Electronics,Mouse Maroon 550,328.4,166.04,162.36
+73,Electronics,Mouse MediumSpringGreen 253,376.88,276.18,100.7
+74,Electronics,Mouse MediumVioletRed 223,110.69,75.9,34.79
+75,Electronics,Headphones SpringGreen 668,215.81,141.46,74.35
+76,Electronics,Speaker SaddleBrown 673,477.04,253.71,223.33
+77,Electronics,Headphones CornflowerBlue 890,171.64,100.08,71.56
+78,Electronics,Keyboard DarkGoldenRod 878,319.4,213.52,105.88
+79,Electronics,Keyboard LightPink 617,282.65,193.26,89.39
+80,Electronics,Webcam Sienna 646,424.86,270.09,154.77
+81,Electronics,Speaker Coral 635,319.42,183.44,135.98
+82,Electronics,Monitor Chocolate 307,555.99,426.9,129.09
+83,Electronics,Speaker Magenta 552,108.17,58.03,50.14
+84,Electronics,SSD RosyBrown 174,71.35,40.83,30.52
+85,Electronics,Webcam LightSkyBlue 895,411.6,302.6,109.0
+86,Electronics,Mouse OliveDrab 474,565.52,391.93,173.59
+87,Electronics,Mouse MediumTurquoise 578,174.27,94.31,79.96
+88,Electronics,Webcam Beige 598,455.61,240.67,214.94
+89,Electronics,Mouse SandyBrown 265,594.23,445.51,148.72
+90,Electronics,Smartwatch MidnightBlue 531,596.62,370.59,226.03
+91,Electronics,Webcam FloralWhite 474,233.27,123.09,110.18
+92,Electronics,Headphones DarkOrange 820,222.65,141.96,80.69
+93,Electronics,Headphones Snow 402,249.08,163.2,85.88
+94,Electronics,Keyboard Chocolate 334,94.32,73.15,21.17
+95,Electronics,Keyboard IndianRed 897,77.91,45.31,32.6
+96,Electronics,Mouse LightSlateGray 532,184.15,99.23,84.92
+97,Electronics,Monitor DarkSeaGreen 627,261.39,172.77,88.62
+98,Electronics,Speaker LightBlue 158,429.24,226.14,203.1
+99,Electronics,Mouse Orchid 117,272.43,142.13,130.3
+100,Electronics,Keyboard OrangeRed 976,486.93,255.7,231.23
+101,Electronics,Webcam SpringGreen 564,67.97,51.58,16.39
+102,Electronics,Headphones Cyan 374,223.32,148.71,74.61
+103,Electronics,Mouse FireBrick 212,54.63,38.94,15.69
+104,Electronics,Mouse RosyBrown 419,179.28,99.38,79.9
+105,Electronics,Monitor PaleGoldenRod 556,332.72,186.91,145.81
+106,Electronics,Mouse LightSeaGreen 356,184.2,136.51,47.69
+107,Electronics,Headphones DarkSlateGray 664,38.75,27.9,10.85
+108,Electronics,Webcam Plum 557,323.11,185.37,137.74
+109,Electronics,Keyboard LightSeaGreen 772,405.24,281.65,123.59
+110,Electronics,Speaker PapayaWhip 618,341.17,261.55,79.62
+111,Electronics,Monitor MintCream 450,422.01,335.38,86.63
+112,Electronics,Webcam Olive 751,504.4,359.14,145.26
+113,Electronics,Mouse Lavender 155,260.68,157.52,103.16
+114,Electronics,Mouse DeepPink 361,38.13,26.22,11.91
+115,Electronics,Smartwatch DarkBlue 961,123.05,64.64,58.41
+116,Electronics,Smartwatch Fuchsia 388,526.21,368.96,157.25
+117,Electronics,Webcam DeepPink 289,424.83,218.18,206.65
+118,Electronics,Mouse Lavender 472,183.35,91.87,91.48
+119,Electronics,SSD Lavender 350,584.4,388.11,196.29
+120,Electronics,Headphones Aquamarine 465,580.43,344.12,236.31
+121,Electronics,Mouse SlateBlue 586,30.61,18.81,11.8
+122,Electronics,Monitor Gainsboro 616,316.58,177.38,139.2
+123,Electronics,Headphones LightGray 247,81.79,60.94,20.85
+124,Electronics,Smartwatch LightSkyBlue 406,364.48,225.32,139.16
+125,Electronics,Monitor AntiqueWhite 641,388.91,204.31,184.6
+126,Electronics,Mouse DarkViolet 710,404.8,289.35,115.45
+127,Electronics,Smartwatch PeachPuff 606,465.66,333.51,132.15
+128,Electronics,Mouse White 248,191.98,131.62,60.36
+129,Electronics,Headphones NavajoWhite 625,500.17,357.37,142.8
+130,Electronics,Smartwatch MediumAquaMarine 242,448.3,333.39,114.91
+131,Electronics,Headphones DarkSalmon 828,501.05,338.32,162.73
+132,Electronics,Webcam Thistle 752,78.5,40.24,38.26
+133,Electronics,SSD CadetBlue 562,576.92,353.64,223.28
+134,Electronics,Headphones SaddleBrown 797,387.83,266.78,121.05
+135,Electronics,Webcam OrangeRed 916,308.9,154.76,154.14
+136,Electronics,Keyboard Orchid 648,456.51,297.14,159.37
+137,Electronics,Keyboard PaleGoldenRod 854,405.8,210.94,194.86
+138,Electronics,Speaker OrangeRed 371,173.75,90.76,82.99
+139,Electronics,Webcam DarkKhaki 857,445.72,250.3,195.42
+140,Electronics,Speaker SkyBlue 590,311.55,191.53,120.02
+141,Electronics,Monitor PaleGoldenRod 758,467.17,320.05,147.12
+142,Electronics,Webcam Chocolate 360,74.16,40.36,33.8
+143,Electronics,Monitor Gold 593,384.06,207.4,176.66
+144,Electronics,Headphones CornflowerBlue 201,306.9,242.99,63.91
+145,Electronics,Webcam HoneyDew 628,415.15,243.8,171.35
+146,Electronics,Monitor Purple 221,294.86,188.68,106.18
+147,Electronics,Webcam DodgerBlue 584,207.65,109.17,98.48
+148,Electronics,Headphones DarkOliveGreen 618,195.07,102.01,93.06
+149,Electronics,Speaker MediumSpringGreen 315,596.56,367.51,229.05
+150,Electronics,Keyboard CadetBlue 636,361.44,196.09,165.35
+151,Electronics,Monitor DarkKhaki 939,573.06,309.33,263.73
+152,Electronics,Monitor AliceBlue 336,535.51,380.75,154.76
+153,Electronics,Speaker DeepPink 125,541.69,349.85,191.84
+154,Electronics,Mouse WhiteSmoke 561,32.05,20.75,11.3
+155,Electronics,Smartwatch DarkGreen 452,202.11,109.59,92.52
+156,Electronics,Smartwatch Moccasin 101,210.16,158.05,52.11
+157,Electronics,SSD Bisque 222,457.92,344.23,113.69
+158,Electronics,Webcam Cornsilk 396,436.42,336.25,100.17
+159,Electronics,Monitor HoneyDew 990,242.17,149.63,92.54
+160,Electronics,Keyboard OldLace 381,235.6,148.05,87.55
+161,Electronics,Headphones DeepPink 777,189.96,97.92,92.04
+162,Electronics,Monitor LightCoral 372,391.93,213.47,178.46
+163,Electronics,Smartwatch MediumTurquoise 482,321.25,178.92,142.33
+164,Electronics,Smartwatch Moccasin 746,534.03,397.1,136.93
+165,Electronics,Smartwatch Sienna 662,550.65,430.72,119.93
+166,Electronics,Webcam DarkRed 849,440.16,226.61,213.55
+167,Electronics,Smartwatch DarkOrange 759,286.99,208.3,78.69
+168,Electronics,Monitor SlateBlue 663,306.78,237.32,69.46
+169,Electronics,Mouse SeaGreen 388,127.33,79.51,47.82
+170,Electronics,Monitor Silver 768,175.77,126.84,48.93
+171,Electronics,Monitor SkyBlue 594,261.54,149.5,112.04
+172,Home & Kitchen,Lamp Magenta 758,170.53,91.39,79.14
+173,Home & Kitchen,Coffee Maker DarkBlue 931,28.04,18.23,9.81
+174,Home & Kitchen,Vacuum DarkTurquoise 440,142.09,90.35,51.74
+175,Home & Kitchen,Toaster DarkKhaki 297,117.99,63.94,54.05
+176,Home & Kitchen,Coffee Maker MediumSpringGreen 193,31.77,19.14,12.63
+177,Home & Kitchen,Air Fryer LightGray 683,67.39,38.92,28.47
+178,Home & Kitchen,Coffee Maker Silver 522,222.94,161.61,61.33
+179,Home & Kitchen,Vacuum DodgerBlue 485,109.33,71.86,37.47
+180,Home & Kitchen,Air Fryer Tomato 384,91.17,47.28,43.89
+181,Home & Kitchen,Lamp Beige 615,242.24,130.27,111.97
+182,Home & Kitchen,Lamp GreenYellow 321,161.11,122.26,38.85
+183,Home & Kitchen,Blender Wheat 509,75.05,43.12,31.93
+184,Home & Kitchen,Cookware MistyRose 969,117.01,91.99,25.02
+185,Home & Kitchen,Toaster DarkViolet 133,219.49,111.18,108.31
+186,Home & Kitchen,Vacuum YellowGreen 584,180.28,138.58,41.7
+187,Home & Kitchen,Lamp Bisque 945,127.56,66.58,60.98
+188,Home & Kitchen,Lamp Wheat 354,215.31,170.45,44.86
+189,Home & Kitchen,Toaster Lime 634,36.17,19.76,16.41
+190,Home & Kitchen,Cookware DarkGoldenRod 817,36.13,27.01,9.12
+191,Home & Kitchen,Cookware LightGoldenRodYellow 187,213.16,163.81,49.35
+192,Home & Kitchen,Lamp Tomato 228,196.45,98.31,98.14
+193,Home & Kitchen,Coffee Maker Moccasin 832,146.65,74.98,71.67
+194,Home & Kitchen,Air Fryer FireBrick 640,240.98,165.78,75.2
+195,Home & Kitchen,Cookware MintCream 201,114.98,83.84,31.14
+196,Home & Kitchen,Blender Ivory 296,82.08,64.27,17.81
+197,Home & Kitchen,Vacuum White 101,72.61,53.52,19.09
+198,Home & Kitchen,Blender Yellow 385,138.99,111.04,27.95
+199,Home & Kitchen,Air Fryer SteelBlue 586,164.7,126.02,38.68
+200,Home & Kitchen,Lamp MediumPurple 521,66.34,38.09,28.25
+201,Home & Kitchen,Cookware Ivory 298,165.92,85.71,80.21
+202,Home & Kitchen,Vacuum GoldenRod 183,222.36,154.35,68.01
+203,Home & Kitchen,Air Fryer LawnGreen 479,64.68,40.57,24.11
+204,Home & Kitchen,Coffee Maker PaleGoldenRod 835,128.31,90.94,37.37
+205,Home & Kitchen,Vacuum Khaki 106,96.96,60.01,36.95
+206,Home & Kitchen,Toaster Green 169,80.11,60.37,19.74
+207,Home & Kitchen,Coffee Maker Tomato 884,128.97,72.24,56.73
+208,Home & Kitchen,Toaster Snow 371,56.54,36.16,20.38
+209,Home & Kitchen,Toaster MintCream 738,223.44,119.03,104.41
+210,Home & Kitchen,Vacuum Black 596,156.42,120.28,36.14
+211,Home & Kitchen,Vacuum Black 709,228.5,118.12,110.38
+212,Home & Kitchen,Coffee Maker LightSeaGreen 124,231.26,119.4,111.86
+213,Home & Kitchen,Lamp SeaShell 161,44.06,22.72,21.34
+214,Home & Kitchen,Coffee Maker LightGoldenRodYellow 421,104.4,80.33,24.07
+215,Home & Kitchen,Cookware GoldenRod 269,37.17,19.47,17.7
+216,Home & Kitchen,Air Fryer MediumTurquoise 637,55.76,38.79,16.97
+217,Home & Kitchen,Cookware RosyBrown 842,122.23,72.55,49.68
+218,Home & Kitchen,Vacuum MediumVioletRed 553,211.39,168.16,43.23
+219,Home & Kitchen,Coffee Maker Moccasin 182,36.15,18.92,17.23
+220,Home & Kitchen,Air Fryer Cyan 674,110.84,84.85,25.99
+221,Home & Kitchen,Toaster Indigo 941,59.78,36.29,23.49
+222,Home & Kitchen,Air Fryer DarkKhaki 150,207.28,130.53,76.75
+223,Home & Kitchen,Cookware Khaki 557,123.63,75.64,47.99
+224,Home & Kitchen,Coffee Maker SeaShell 585,87.59,63.17,24.42
+225,Home & Kitchen,Blender Gray 740,161.6,92.82,68.78
+226,Home & Kitchen,Toaster MediumSlateBlue 575,107.15,65.65,41.5
+227,Home & Kitchen,Blender GreenYellow 299,202.8,105.17,97.63
+228,Home & Kitchen,Cookware SkyBlue 471,25.08,17.1,7.98
+229,Home & Kitchen,Air Fryer AliceBlue 144,90.39,71.06,19.33
+230,Home & Kitchen,Air Fryer Silver 382,189.15,133.71,55.44
+231,Home & Kitchen,Air Fryer MediumTurquoise 924,10.91,7.93,2.98
+232,Home & Kitchen,Cookware DarkBlue 945,237.16,123.23,113.93
+233,Home & Kitchen,Coffee Maker DarkOrchid 576,35.74,25.54,10.2
+234,Home & Kitchen,Toaster Orange 540,102.76,59.12,43.64
+235,Home & Kitchen,Toaster Green 287,128.43,99.97,28.46
+236,Home & Kitchen,Blender Silver 942,202.62,146.2,56.42
+237,Home & Kitchen,Cookware Fuchsia 435,195.47,133.34,62.13
+238,Home & Kitchen,Toaster PowderBlue 901,86.69,52.76,33.93
+239,Home & Kitchen,Lamp MediumSeaGreen 870,28.96,16.19,12.77
+240,Home & Kitchen,Coffee Maker DarkCyan 134,69.35,36.02,33.33
+241,Home & Kitchen,Vacuum Orchid 536,142.62,85.25,57.37
+242,Home & Kitchen,Blender SandyBrown 186,247.08,143.17,103.91
+243,Home & Kitchen,Coffee Maker PaleGoldenRod 826,33.14,21.53,11.61
+244,Home & Kitchen,Vacuum DarkBlue 571,51.57,27.84,23.73
+245,Home & Kitchen,Lamp DimGray 651,223.9,127.73,96.17
+246,Home & Kitchen,Toaster FloralWhite 898,195.73,142.47,53.26
+247,Home & Kitchen,Toaster DarkSalmon 374,80.54,47.02,33.52
+248,Home & Kitchen,Air Fryer Black 549,70.97,41.03,29.94
+249,Home & Kitchen,Coffee Maker DeepPink 388,54.58,31.15,23.43
+250,Home & Kitchen,Lamp SeaGreen 357,55.18,28.66,26.52
+251,Home & Kitchen,Coffee Maker DarkViolet 927,131.76,75.03,56.73
+252,Home & Kitchen,Blender Sienna 204,166.8,132.99,33.81
+253,Home & Kitchen,Blender MediumVioletRed 960,123.94,92.43,31.51
+254,Home & Kitchen,Vacuum DeepSkyBlue 400,229.45,117.5,111.95
+255,Home & Kitchen,Coffee Maker DarkSeaGreen 947,38.61,21.5,17.11
+256,Home & Kitchen,Lamp Beige 624,56.6,29.58,27.02
+257,Home & Kitchen,Toaster Aquamarine 893,52.66,35.86,16.8
+258,Home & Kitchen,Toaster DarkKhaki 752,169.54,85.09,84.45
+259,Home & Kitchen,Lamp Violet 138,180.33,109.08,71.25
+260,Home & Kitchen,Air Fryer DarkSlateGray 361,91.6,47.01,44.59
+261,Home & Kitchen,Blender PowderBlue 308,153.86,107.01,46.85
+262,Home & Kitchen,Toaster GoldenRod 794,12.73,7.61,5.12
+263,Home & Kitchen,Air Fryer HotPink 308,54.43,32.31,22.12
+264,Home & Kitchen,Blender Black 164,200.87,133.46,67.41
+265,Home & Kitchen,Vacuum LightCoral 663,34.33,21.24,13.09
+266,Home & Kitchen,Coffee Maker HotPink 267,163.4,86.17,77.23
+267,Home & Kitchen,Vacuum LightSteelBlue 390,176.9,110.2,66.7
+268,Home & Kitchen,Cookware SteelBlue 419,83.82,65.88,17.94
+269,Home & Kitchen,Cookware LawnGreen 526,145.96,88.62,57.34
+270,Home & Kitchen,Blender MediumOrchid 472,217.42,173.72,43.7
+271,Home & Kitchen,Cookware LightGoldenRodYellow 308,57.33,41.19,16.14
+272,Home & Kitchen,Blender YellowGreen 216,114.2,62.46,51.74
+273,Home & Kitchen,Toaster PeachPuff 473,31.72,21.36,10.36
+274,Home & Kitchen,Vacuum DarkSeaGreen 152,195.53,105.39,90.14
+275,Home & Kitchen,Lamp Chocolate 506,44.2,32.79,11.41
+276,Home & Kitchen,Blender MidnightBlue 854,147.49,114.77,32.72
+277,Home & Kitchen,Lamp Salmon 265,51.2,30.94,20.26
+278,Home & Kitchen,Lamp Tomato 492,51.23,26.65,24.58
+279,Home & Kitchen,Vacuum PeachPuff 924,190.85,140.78,50.07
+280,Home & Kitchen,Coffee Maker SteelBlue 144,82.39,61.89,20.5
+281,Home & Kitchen,Vacuum DarkSeaGreen 751,85.49,58.33,27.16
+282,Home & Kitchen,Vacuum White 804,30.71,21.92,8.79
+283,Home & Kitchen,Toaster DeepPink 977,223.87,154.94,68.93
+284,Home & Kitchen,Coffee Maker Violet 300,159.05,108.86,50.19
+285,Home & Kitchen,Toaster Teal 142,123.51,82.71,40.8
+286,Home & Kitchen,Vacuum Azure 467,235.25,128.67,106.58
+287,Home & Kitchen,Blender Purple 935,45.87,36.29,9.58
+288,Home & Kitchen,Coffee Maker Gainsboro 875,19.86,13.28,6.58
+289,Home & Kitchen,Cookware AntiqueWhite 220,19.15,14.39,4.76
+290,Home & Kitchen,Vacuum DeepPink 742,153.88,102.33,51.55
+291,Home & Kitchen,Toaster ForestGreen 696,83.49,52.27,31.22
+292,Home & Kitchen,Coffee Maker DarkTurquoise 557,112.18,78.26,33.92
+293,Home & Kitchen,Lamp Sienna 733,115.2,58.41,56.79
+294,Home & Kitchen,Vacuum DarkOrchid 733,121.67,77.14,44.53
+295,Home & Kitchen,Toaster Chocolate 929,206.55,155.11,51.44
+296,Home & Kitchen,Vacuum MediumOrchid 467,106.08,55.18,50.9
+297,Home & Kitchen,Vacuum Tomato 616,97.68,72.35,25.33
+298,Home & Kitchen,Lamp Wheat 233,167.7,85.9,81.8
+299,Home & Kitchen,Blender SkyBlue 837,231.31,137.43,93.88
+300,Home & Kitchen,Lamp DarkMagenta 486,29.19,21.18,8.01
+301,Home & Kitchen,Cookware Chartreuse 977,238.21,128.84,109.37
+302,Home & Kitchen,Blender LightBlue 934,249.07,179.24,69.83
+303,Home & Kitchen,Blender Gold 603,56.49,44.88,11.61
+304,Home & Kitchen,Air Fryer LightSalmon 269,239.59,185.64,53.95
+305,Home & Kitchen,Cookware BlueViolet 167,199.21,155.22,43.99
+306,Home & Kitchen,Toaster DarkGreen 262,94.22,68.48,25.74
+307,Home & Kitchen,Air Fryer Tan 935,225.17,131.16,94.01
+308,Home & Kitchen,Vacuum RoyalBlue 591,44.46,28.93,15.53
+309,Home & Kitchen,Coffee Maker Black 343,152.05,104.12,47.93
+310,Home & Kitchen,Air Fryer Coral 513,99.34,55.6,43.74
+311,Home & Kitchen,Coffee Maker Red 435,162.78,94.98,67.8
+312,Home & Kitchen,Vacuum MediumOrchid 217,50.5,37.14,13.36
+313,Home & Kitchen,Toaster Tan 468,137.37,94.91,42.46
+314,Home & Kitchen,Toaster Thistle 805,118.73,77.94,40.79
+315,Home & Kitchen,Blender Green 977,70.49,46.57,23.92
+316,Home & Kitchen,Vacuum LightSalmon 484,187.1,114.4,72.7
+317,Home & Kitchen,Air Fryer RoyalBlue 882,148.57,90.34,58.23
+318,Home & Kitchen,Blender Teal 861,116.15,64.23,51.92
+319,Home & Kitchen,Blender White 417,81.13,53.13,28.0
+320,Home & Kitchen,Cookware Silver 779,241.83,184.05,57.78
+321,Home & Kitchen,Air Fryer Tan 326,185.93,134.64,51.29
+322,Home & Kitchen,Coffee Maker LightBlue 527,79.83,54.9,24.93
+323,Home & Kitchen,Lamp Turquoise 600,97.38,50.09,47.29
+324,Home & Kitchen,Coffee Maker LightGoldenRodYellow 155,157.0,80.65,76.35
+325,Home & Kitchen,Blender Green 635,146.11,86.37,59.74
+326,Home & Kitchen,Air Fryer RosyBrown 408,138.19,86.23,51.96
+327,Home & Kitchen,Lamp DarkSlateGray 948,42.09,25.67,16.42
+328,Home & Kitchen,Vacuum PapayaWhip 920,48.07,24.24,23.83
+329,Home & Kitchen,Coffee Maker DarkRed 165,179.79,114.21,65.58
+330,Home & Kitchen,Cookware OrangeRed 376,44.73,31.29,13.44
+331,Home & Kitchen,Vacuum Red 157,204.78,161.8,42.98
+332,Home & Kitchen,Cookware Maroon 708,207.01,158.94,48.07
+333,Home & Kitchen,Cookware Cornsilk 630,148.83,101.29,47.54
+334,Home & Kitchen,Cookware LawnGreen 100,128.28,70.49,57.79
+335,Home & Kitchen,Blender Pink 290,24.77,12.57,12.2
+336,Home & Kitchen,Coffee Maker Cornsilk 207,48.21,37.29,10.92
+337,Home & Kitchen,Blender HotPink 301,157.03,109.46,47.57
+338,Home & Kitchen,Coffee Maker LimeGreen 758,109.16,71.55,37.61
+339,Home & Kitchen,Lamp DarkRed 727,165.42,103.32,62.1
+340,Home & Kitchen,Coffee Maker DeepSkyBlue 740,132.06,68.56,63.5
+341,Home & Kitchen,Blender Moccasin 589,248.57,178.3,70.27
+342,Home & Kitchen,Cookware DarkTurquoise 547,139.22,85.28,53.94
+343,Beauty,Lipstick LightCoral 771,109.91,57.61,52.3
+344,Beauty,Conditioner DarkSlateGray 367,25.17,20.11,5.06
+345,Beauty,Serum SeaGreen 867,79.06,42.45,36.61
+346,Beauty,Lipstick Indigo 153,113.43,65.67,47.76
+347,Beauty,Shampoo DarkGray 802,78.12,54.98,23.14
+348,Beauty,Sunscreen Orchid 322,116.77,68.74,48.03
+349,Beauty,Moisturizer SlateBlue 366,106.21,53.59,52.62
+350,Beauty,Serum DodgerBlue 263,101.8,57.09,44.71
+351,Beauty,Lipstick Ivory 498,110.22,61.46,48.76
+352,Beauty,Shampoo DodgerBlue 972,74.14,45.51,28.63
+353,Beauty,Lipstick Plum 961,110.99,88.18,22.81
+354,Beauty,Sunscreen Thistle 814,58.99,44.36,14.63
+355,Beauty,Moisturizer PaleGreen 842,103.62,65.4,38.22
+356,Beauty,Serum MediumSlateBlue 317,70.59,41.81,28.78
+357,Beauty,Conditioner PeachPuff 275,76.6,40.09,36.51
+358,Beauty,Serum Gray 736,8.79,4.69,4.1
+359,Beauty,Serum MintCream 129,44.66,24.23,20.43
+360,Beauty,Moisturizer MediumAquaMarine 749,9.79,6.93,2.86
+361,Beauty,Moisturizer DarkGoldenRod 167,85.16,61.4,23.76
+362,Beauty,Sunscreen Moccasin 939,92.6,51.84,40.76
+363,Beauty,Sunscreen Azure 988,107.5,55.88,51.62
+364,Beauty,Lipstick MediumSlateBlue 310,113.6,60.45,53.15
+365,Beauty,Serum Salmon 968,17.88,9.12,8.76
+366,Beauty,Lipstick Purple 747,15.06,10.92,4.14
+367,Beauty,Shampoo Azure 910,59.87,32.32,27.55
+368,Beauty,Lipstick OliveDrab 533,28.57,17.02,11.55
+369,Beauty,Shampoo MediumPurple 389,7.41,4.28,3.13
+370,Beauty,Moisturizer Tomato 428,87.31,53.29,34.02
+371,Beauty,Sunscreen LightYellow 733,62.93,47.54,15.39
+372,Beauty,Lipstick Thistle 546,8.56,5.34,3.22
+373,Beauty,Sunscreen Coral 821,93.9,56.72,37.18
+374,Beauty,Moisturizer DarkOliveGreen 982,66.86,37.77,29.09
+375,Beauty,Moisturizer Khaki 546,71.07,41.66,29.41
+376,Beauty,Moisturizer DarkKhaki 868,65.21,38.25,26.96
+377,Beauty,Moisturizer DarkBlue 603,5.5,3.56,1.94
+378,Beauty,Lipstick LightGray 606,96.63,53.66,42.97
+379,Beauty,Sunscreen LightPink 366,44.93,33.68,11.25
+380,Beauty,Sunscreen BlueViolet 319,113.55,66.44,47.11
+381,Beauty,Lipstick Gainsboro 751,31.63,17.39,14.24
+382,Beauty,Moisturizer LightPink 674,61.38,48.94,12.44
+383,Beauty,Moisturizer DarkSeaGreen 510,77.21,46.84,30.37
+384,Beauty,Conditioner Peru 532,107.56,77.83,29.73
+385,Beauty,Lipstick LightGoldenRodYellow 369,7.9,4.44,3.46
+386,Beauty,Conditioner PaleGreen 488,108.64,70.65,37.99
+387,Beauty,Lipstick DeepPink 644,31.86,20.34,11.52
+388,Beauty,Sunscreen WhiteSmoke 761,91.76,66.61,25.15
+389,Beauty,Moisturizer Thistle 259,45.08,26.96,18.12
+390,Beauty,Conditioner Snow 273,81.14,58.63,22.51
+391,Beauty,Conditioner MediumOrchid 693,55.46,40.6,14.86
+392,Beauty,Serum DarkCyan 813,19.5,12.45,7.05
+393,Beauty,Serum LightSeaGreen 872,63.39,36.78,26.61
+394,Beauty,Lipstick Chartreuse 840,100.05,68.55,31.5
+395,Beauty,Serum Gainsboro 717,117.1,83.95,33.15
+396,Beauty,Sunscreen Peru 293,45.09,25.74,19.35
+397,Beauty,Shampoo Cornsilk 204,117.14,84.18,32.96
+398,Beauty,Serum LightGreen 493,115.67,61.36,54.31
+399,Beauty,Serum Azure 850,118.14,87.24,30.9
+400,Beauty,Shampoo DarkCyan 753,55.02,30.75,24.27
+401,Beauty,Moisturizer LightGoldenRodYellow 575,37.29,28.55,8.74
+402,Beauty,Moisturizer DarkBlue 547,6.45,4.88,1.57
+403,Beauty,Lipstick Indigo 403,30.58,24.29,6.29
+404,Beauty,Conditioner CornflowerBlue 855,7.54,4.35,3.19
+405,Beauty,Conditioner LightGray 973,5.63,3.22,2.41
+406,Beauty,Conditioner DarkRed 762,85.63,57.91,27.72
+407,Beauty,Conditioner SaddleBrown 768,102.29,71.64,30.65
+408,Beauty,Lipstick Aqua 795,85.51,64.62,20.89
+409,Beauty,Serum MediumSlateBlue 420,78.78,50.12,28.66
+410,Beauty,Shampoo PapayaWhip 529,77.25,40.89,36.36
+411,Beauty,Serum LightGreen 744,94.97,67.8,27.17
+412,Beauty,Serum DarkSeaGreen 566,33.76,21.17,12.59
+413,Beauty,Moisturizer Brown 791,76.48,47.63,28.85
+414,Beauty,Lipstick Violet 770,111.97,62.13,49.84
+415,Beauty,Shampoo LawnGreen 601,94.49,58.26,36.23
+416,Beauty,Moisturizer DarkOliveGreen 264,9.39,6.23,3.16
+417,Beauty,Lipstick DodgerBlue 631,94.91,74.24,20.67
+418,Beauty,Shampoo LightGray 654,16.63,11.18,5.45
+419,Beauty,Serum BurlyWood 754,87.49,57.19,30.3
+420,Beauty,Shampoo Gainsboro 567,64.99,40.5,24.49
+421,Beauty,Serum Green 626,118.88,66.0,52.88
+422,Beauty,Moisturizer Magenta 752,88.85,60.79,28.06
+423,Beauty,Moisturizer Linen 162,34.03,20.91,13.12
+424,Beauty,Moisturizer Wheat 743,13.65,10.57,3.08
+425,Beauty,Lipstick GreenYellow 211,82.61,55.68,26.93
+426,Beauty,Serum LightSteelBlue 639,39.9,24.74,15.16
+427,Beauty,Serum RosyBrown 573,119.34,94.07,25.27
+428,Beauty,Serum SteelBlue 170,23.92,18.63,5.29
+429,Beauty,Lipstick Fuchsia 838,27.21,18.85,8.36
+430,Beauty,Serum LightPink 782,98.68,53.67,45.01
+431,Beauty,Lipstick MediumTurquoise 523,100.53,74.25,26.28
+432,Beauty,Conditioner Azure 765,119.56,87.04,32.52
+433,Beauty,Serum LightCoral 902,94.68,60.67,34.01
+434,Beauty,Serum Blue 359,35.75,21.91,13.84
+435,Beauty,Conditioner Aquamarine 924,83.06,53.53,29.53
+436,Beauty,Lipstick Azure 770,96.87,58.84,38.03
+437,Beauty,Shampoo Tan 738,41.84,27.01,14.83
+438,Beauty,Lipstick Gold 256,14.82,11.4,3.42
+439,Beauty,Shampoo Thistle 947,103.26,53.4,49.86
+440,Beauty,Sunscreen Sienna 243,109.17,80.26,28.91
+441,Beauty,Sunscreen LemonChiffon 115,100.6,69.41,31.19
+442,Beauty,Lipstick RosyBrown 771,6.32,4.96,1.36
+443,Beauty,Shampoo DarkMagenta 246,33.75,17.9,15.85
+444,Beauty,Serum Plum 903,26.35,16.75,9.6
+445,Beauty,Serum Snow 647,28.98,17.99,10.99
+446,Beauty,Serum YellowGreen 900,75.09,53.04,22.05
+447,Beauty,Moisturizer OrangeRed 906,81.87,62.89,18.98
+448,Beauty,Lipstick Tan 809,101.46,56.74,44.72
+449,Beauty,Serum Linen 549,66.04,47.72,18.32
+450,Beauty,Lipstick IndianRed 370,106.51,70.99,35.52
+451,Beauty,Conditioner Khaki 604,31.93,17.3,14.63
+452,Beauty,Sunscreen MediumSpringGreen 247,11.72,7.5,4.22
+453,Beauty,Lipstick Gray 652,61.51,39.95,21.56
+454,Beauty,Sunscreen DarkSlateGray 960,104.23,52.32,51.91
+455,Beauty,Shampoo PaleGreen 781,58.82,39.34,19.48
+456,Beauty,Shampoo MediumTurquoise 528,101.67,62.27,39.4
+457,Beauty,Lipstick CadetBlue 751,13.67,9.45,4.22
+458,Beauty,Lipstick DarkSeaGreen 798,8.28,5.65,2.63
+459,Beauty,Lipstick Aquamarine 196,112.12,67.18,44.94
+460,Beauty,Sunscreen Cornsilk 247,60.68,44.12,16.56
+461,Beauty,Moisturizer LightCyan 229,29.54,18.45,11.09
+462,Beauty,Shampoo Plum 449,15.86,11.07,4.79
+463,Beauty,Conditioner DodgerBlue 315,94.53,62.98,31.55
+464,Beauty,Shampoo Chartreuse 667,55.05,34.5,20.55
+465,Beauty,Moisturizer DarkBlue 947,100.07,58.83,41.24
+466,Beauty,Conditioner Olive 378,51.43,33.49,17.94
+467,Beauty,Sunscreen Tan 604,44.65,25.05,19.6
+468,Beauty,Moisturizer LightSkyBlue 406,43.05,25.62,17.43
+469,Beauty,Serum LemonChiffon 903,72.44,50.02,22.42
+470,Beauty,Moisturizer LightYellow 515,50.87,33.89,16.98
+471,Beauty,Sunscreen Brown 211,71.02,44.0,27.02
+472,Beauty,Moisturizer Salmon 586,10.34,7.72,2.62
+473,Beauty,Sunscreen GhostWhite 612,93.09,48.22,44.87
+474,Beauty,Sunscreen DimGray 741,75.35,51.62,23.73
+475,Beauty,Lipstick LightGreen 797,85.09,57.77,27.32
+476,Beauty,Moisturizer RosyBrown 568,29.44,20.61,8.83
+477,Beauty,Lipstick AliceBlue 285,92.71,49.17,43.54
+478,Beauty,Moisturizer LightGray 771,53.48,28.35,25.13
+479,Beauty,Moisturizer Moccasin 905,47.42,35.41,12.01
+480,Beauty,Shampoo MediumPurple 409,69.64,40.21,29.43
+481,Beauty,Serum MediumBlue 541,53.51,31.87,21.64
+482,Beauty,Sunscreen LemonChiffon 155,78.8,61.48,17.32
+483,Beauty,Conditioner BlanchedAlmond 221,70.26,35.96,34.3
+484,Beauty,Conditioner Magenta 557,71.16,55.19,15.97
+485,Beauty,Moisturizer IndianRed 706,6.63,4.09,2.54
+486,Beauty,Lipstick MintCream 522,117.79,75.7,42.09
+487,Beauty,Sunscreen Gainsboro 317,16.73,11.6,5.13
+488,Beauty,Serum AliceBlue 109,77.09,48.42,28.67
+489,Beauty,Lipstick MediumSeaGreen 979,81.98,65.26,16.72
+490,Beauty,Moisturizer Olive 583,30.1,16.15,13.95
+491,Beauty,Moisturizer DarkBlue 561,36.68,24.6,12.08
+492,Beauty,Lipstick Sienna 474,90.58,70.37,20.21
+493,Beauty,Lipstick LightSeaGreen 847,87.06,65.87,21.19
+494,Beauty,Moisturizer SteelBlue 610,38.71,25.83,12.88
+495,Beauty,Conditioner Green 153,82.0,62.89,19.11
+496,Beauty,Lipstick LightBlue 766,8.68,4.5,4.18
+497,Beauty,Lipstick Tan 418,98.99,51.86,47.13
+498,Beauty,Shampoo AntiqueWhite 981,88.89,48.87,40.02
+499,Beauty,Conditioner DarkGoldenRod 688,75.03,44.63,30.4
+500,Beauty,Lipstick LightGray 248,55.45,38.98,16.47
+501,Beauty,Moisturizer DarkCyan 744,46.78,32.44,14.34
+502,Beauty,Conditioner DarkTurquoise 563,59.85,43.9,15.95
+503,Beauty,Shampoo PaleGoldenRod 399,95.23,63.81,31.42
+504,Beauty,Shampoo BlueViolet 820,11.97,9.48,2.49
+505,Beauty,Sunscreen OrangeRed 115,43.18,29.44,13.74
+506,Beauty,Serum Beige 538,74.13,43.93,30.2
+507,Beauty,Serum Lime 716,48.32,34.09,14.23
+508,Beauty,Serum LimeGreen 101,97.86,57.25,40.61
+509,Beauty,Shampoo Lavender 700,35.25,22.09,13.16
+510,Beauty,Moisturizer DarkBlue 988,38.18,20.7,17.48
+511,Beauty,Sunscreen Wheat 916,21.9,17.36,4.54
+512,Beauty,Sunscreen DeepSkyBlue 455,83.73,64.82,18.91
+513,Beauty,Sunscreen Orange 916,14.78,9.84,4.94
+514,Sports,Cycling Helmet MediumOrchid 339,66.53,48.24,18.29
+515,Sports,Tennis Racket Snow 576,185.21,130.26,54.95
+516,Sports,Dumbbell DeepPink 109,278.39,188.17,90.22
+517,Sports,Cycling Helmet LightSkyBlue 925,142.24,74.86,67.38
+518,Sports,Tennis Racket DarkViolet 693,233.47,133.05,100.42
+519,Sports,Water Bottle Brown 634,269.9,206.62,63.28
+520,Sports,Tennis Racket Thistle 293,147.16,99.6,47.56
+521,Sports,Dumbbell Pink 817,64.16,35.56,28.6
+522,Sports,Tennis Racket Tan 512,113.95,76.27,37.68
+523,Sports,Water Bottle DarkSlateGray 605,258.23,148.2,110.03
+524,Sports,Tennis Racket Violet 574,260.98,159.59,101.39
+525,Sports,Yoga Mat Tan 453,53.6,36.4,17.2
+526,Sports,Tennis Racket Azure 134,159.68,80.83,78.85
+527,Sports,Dumbbell Khaki 597,297.2,225.82,71.38
+528,Sports,Water Bottle DarkBlue 897,173.62,100.44,73.18
+529,Sports,Tennis Racket Black 885,132.38,103.78,28.6
+530,Sports,Water Bottle BlueViolet 360,247.1,194.97,52.13
+531,Sports,Yoga Mat DarkSlateBlue 487,106.94,85.38,21.56
+532,Sports,Yoga Mat MistyRose 478,16.04,8.19,7.85
+533,Sports,Cycling Helmet DarkKhaki 165,150.16,113.17,36.99
+534,Sports,Water Bottle OldLace 823,194.83,151.31,43.52
+535,Sports,Yoga Mat RoyalBlue 756,83.1,55.62,27.48
+536,Sports,Yoga Mat BurlyWood 502,287.27,201.35,85.92
+537,Sports,Dumbbell Azure 340,138.92,76.12,62.8
+538,Sports,Dumbbell White 460,58.26,45.59,12.67
+539,Sports,Yoga Mat LemonChiffon 957,271.6,209.5,62.1
+540,Sports,Yoga Mat SlateGray 857,83.31,54.48,28.83
+541,Sports,Cycling Helmet LightGray 873,24.28,13.19,11.09
+542,Sports,Yoga Mat AliceBlue 405,282.3,198.48,83.82
+543,Sports,Water Bottle SaddleBrown 207,180.71,131.44,49.27
+544,Sports,Cycling Helmet CornflowerBlue 227,102.58,59.2,43.38
+545,Sports,Tennis Racket SteelBlue 344,148.54,81.78,66.76
+546,Sports,Dumbbell WhiteSmoke 579,274.98,211.09,63.89
+547,Sports,Dumbbell DarkGoldenRod 952,241.26,131.99,109.27
+548,Sports,Dumbbell Violet 482,30.71,21.05,9.66
+549,Sports,Dumbbell Coral 494,235.27,185.25,50.02
+550,Sports,Yoga Mat Sienna 447,191.48,121.72,69.76
+551,Sports,Tennis Racket LightCoral 743,248.33,159.74,88.59
+552,Sports,Tennis Racket Crimson 158,49.69,28.15,21.54
+553,Sports,Dumbbell LightGray 248,216.41,144.13,72.28
+554,Sports,Cycling Helmet LavenderBlush 521,262.25,152.08,110.17
+555,Sports,Dumbbell GreenYellow 959,53.46,31.08,22.38
+556,Sports,Tennis Racket Lavender 602,105.68,58.16,47.52
+557,Sports,Yoga Mat Salmon 216,100.88,77.77,23.11
+558,Sports,Dumbbell Snow 906,293.76,151.89,141.87
+559,Sports,Dumbbell Olive 222,171.5,128.73,42.77
+560,Sports,Tennis Racket Crimson 542,228.42,180.73,47.69
+561,Sports,Tennis Racket Silver 199,299.44,232.82,66.62
+562,Sports,Cycling Helmet LightSlateGray 158,92.51,71.13,21.38
+563,Sports,Tennis Racket Brown 552,50.15,34.7,15.45
+564,Sports,Water Bottle Gray 101,107.54,58.29,49.25
+565,Sports,Water Bottle Crimson 141,91.63,55.71,35.92
+566,Sports,Cycling Helmet DarkViolet 241,71.73,48.16,23.57
+567,Sports,Dumbbell MediumPurple 279,160.32,91.24,69.08
+568,Sports,Dumbbell LightCyan 723,183.39,137.3,46.09
+569,Sports,Cycling Helmet LimeGreen 240,230.29,127.26,103.03
+570,Sports,Water Bottle DarkSlateBlue 296,203.61,140.19,63.42
+571,Sports,Water Bottle Aquamarine 808,97.95,49.27,48.68
+572,Sports,Water Bottle SkyBlue 156,127.17,91.12,36.05
+573,Sports,Water Bottle Chocolate 962,244.71,146.96,97.75
+574,Sports,Cycling Helmet SlateBlue 881,34.38,21.41,12.97
+575,Sports,Cycling Helmet LightGreen 354,46.92,32.83,14.09
+576,Sports,Dumbbell DarkGreen 137,172.43,137.2,35.23
+577,Sports,Dumbbell IndianRed 978,213.06,143.28,69.78
+578,Sports,Yoga Mat SlateGray 628,112.0,87.32,24.68
+579,Sports,Yoga Mat LightSteelBlue 936,43.27,30.91,12.36
+580,Sports,Tennis Racket Tomato 690,235.5,179.08,56.42
+581,Sports,Yoga Mat LightSlateGray 848,93.13,49.57,43.56
+582,Sports,Cycling Helmet SandyBrown 923,138.36,70.24,68.12
+583,Sports,Water Bottle SeaGreen 190,47.24,27.07,20.17
+584,Sports,Dumbbell SeaGreen 419,188.77,103.89,84.88
+585,Sports,Tennis Racket DarkOrchid 119,170.17,133.86,36.31
+586,Sports,Yoga Mat Green 367,278.48,200.96,77.52
+587,Sports,Yoga Mat Magenta 575,252.5,174.49,78.01
+588,Sports,Water Bottle DarkBlue 459,77.6,49.14,28.46
+589,Sports,Yoga Mat Sienna 226,217.39,111.64,105.75
+590,Sports,Cycling Helmet Azure 386,152.13,98.92,53.21
+591,Sports,Yoga Mat LightSteelBlue 240,43.63,27.12,16.51
+592,Sports,Water Bottle Salmon 250,180.81,137.11,43.7
+593,Sports,Water Bottle Crimson 945,142.92,88.47,54.45
+594,Sports,Yoga Mat Tan 530,281.77,173.75,108.02
+595,Sports,Water Bottle RoyalBlue 505,253.2,166.53,86.67
+596,Sports,Yoga Mat LightGreen 346,234.86,141.28,93.58
+597,Sports,Tennis Racket Orange 677,216.93,163.33,53.6
+598,Sports,Tennis Racket HoneyDew 154,245.99,185.55,60.44
+599,Sports,Tennis Racket HoneyDew 461,159.07,125.25,33.82
+600,Sports,Dumbbell Crimson 111,262.19,183.25,78.94
+601,Sports,Tennis Racket DarkGoldenRod 432,39.84,22.16,17.68
+602,Sports,Cycling Helmet DarkTurquoise 330,66.63,46.69,19.94
+603,Sports,Dumbbell Violet 564,130.85,81.01,49.84
+604,Sports,Yoga Mat LightGray 141,244.31,186.97,57.34
+605,Sports,Yoga Mat MistyRose 794,260.76,178.95,81.81
+606,Sports,Water Bottle DarkSeaGreen 136,87.84,58.21,29.63
+607,Sports,Water Bottle Teal 113,37.35,20.04,17.31
+608,Sports,Cycling Helmet LightSeaGreen 215,77.1,39.46,37.64
+609,Sports,Tennis Racket DarkOliveGreen 161,109.49,60.23,49.26
+610,Sports,Water Bottle Moccasin 374,288.05,223.62,64.43
+611,Sports,Yoga Mat Lavender 251,144.19,95.19,49.0
+612,Sports,Cycling Helmet SpringGreen 400,44.18,23.83,20.35
+613,Sports,Cycling Helmet SlateBlue 853,176.58,102.81,73.77
+614,Sports,Yoga Mat OrangeRed 565,224.2,131.41,92.79
+615,Sports,Water Bottle Bisque 495,210.89,119.47,91.42
+616,Sports,Dumbbell DimGray 661,168.18,102.6,65.58
+617,Sports,Tennis Racket AliceBlue 417,186.94,119.77,67.17
+618,Sports,Yoga Mat SlateGray 624,78.74,44.6,34.14
+619,Sports,Water Bottle RoyalBlue 112,119.89,81.01,38.88
+620,Sports,Tennis Racket PaleGreen 431,55.39,43.52,11.87
+621,Sports,Water Bottle LimeGreen 999,103.04,59.86,43.18
+622,Sports,Dumbbell DarkTurquoise 262,94.29,68.99,25.3
+623,Sports,Water Bottle PapayaWhip 550,27.51,20.95,6.56
+624,Sports,Yoga Mat MediumTurquoise 462,158.96,119.27,39.69
+625,Sports,Yoga Mat OldLace 793,160.11,127.57,32.54
+626,Sports,Dumbbell Maroon 243,129.69,90.84,38.85
+627,Sports,Dumbbell DarkOrchid 940,187.96,141.91,46.05
+628,Sports,Water Bottle MediumPurple 877,35.76,27.07,8.69
+629,Sports,Cycling Helmet AliceBlue 747,86.46,59.59,26.87
+630,Sports,Dumbbell MediumOrchid 520,128.61,68.29,60.32
+631,Sports,Water Bottle MediumSlateBlue 685,179.06,116.28,62.78
+632,Sports,Dumbbell Orchid 993,130.03,95.59,34.44
+633,Sports,Water Bottle DarkOrchid 563,185.34,113.77,71.57
+634,Sports,Cycling Helmet Gray 461,92.11,55.8,36.31
+635,Sports,Cycling Helmet Aquamarine 763,161.63,109.69,51.94
+636,Sports,Tennis Racket LightSteelBlue 611,9.97,7.22,2.75
+637,Sports,Cycling Helmet LightCoral 411,137.66,76.44,61.22
+638,Sports,Dumbbell Navy 337,135.21,82.9,52.31
+639,Sports,Yoga Mat Coral 963,247.92,148.51,99.41
+640,Sports,Water Bottle OrangeRed 309,252.74,199.07,53.67
+641,Sports,Cycling Helmet Orange 126,268.25,211.05,57.2
+642,Sports,Yoga Mat Crimson 407,82.91,63.74,19.17
+643,Sports,Water Bottle MistyRose 547,233.86,154.71,79.15
+644,Sports,Water Bottle Pink 540,249.1,178.89,70.21
+645,Sports,Cycling Helmet LightSalmon 792,143.56,73.53,70.03
+646,Sports,Tennis Racket BurlyWood 169,140.29,70.58,69.71
+647,Sports,Water Bottle LightSeaGreen 612,74.95,46.68,28.27
+648,Sports,Cycling Helmet DarkKhaki 257,197.37,153.66,43.71
+649,Sports,Dumbbell CadetBlue 550,289.63,187.11,102.52
+650,Sports,Water Bottle LightSlateGray 808,270.55,182.95,87.6
+651,Sports,Water Bottle DeepPink 471,225.97,119.24,106.73
+652,Sports,Tennis Racket LightBlue 418,115.06,60.12,54.94
+653,Sports,Water Bottle LightGreen 401,59.27,41.3,17.97
+654,Sports,Tennis Racket PowderBlue 530,247.6,197.36,50.24
+655,Sports,Dumbbell Teal 312,161.02,119.94,41.08
+656,Sports,Water Bottle Maroon 161,268.8,167.64,101.16
+657,Sports,Water Bottle Gold 746,184.11,111.56,72.55
+658,Sports,Yoga Mat Navy 102,209.99,105.67,104.32
+659,Sports,Tennis Racket Pink 411,215.51,143.5,72.01
+660,Sports,Cycling Helmet Black 784,253.91,171.61,82.3
+661,Sports,Yoga Mat PaleGoldenRod 666,65.42,42.48,22.94
+662,Sports,Water Bottle GreenYellow 644,85.68,59.47,26.21
+663,Sports,Water Bottle Cyan 520,299.16,201.14,98.02
+664,Sports,Water Bottle BurlyWood 877,43.48,23.78,19.7
+665,Sports,Water Bottle PaleVioletRed 274,39.14,20.75,18.39
+666,Sports,Water Bottle RoyalBlue 540,151.2,96.81,54.39
+667,Sports,Yoga Mat DarkSlateGray 692,197.83,139.54,58.29
+668,Sports,Tennis Racket LightSlateGray 382,50.03,28.59,21.44
+669,Sports,Dumbbell SlateBlue 979,17.6,12.12,5.48
+670,Sports,Water Bottle BurlyWood 738,26.4,14.72,11.68
+671,Sports,Cycling Helmet DarkSalmon 505,13.71,7.76,5.95
+672,Sports,Water Bottle FloralWhite 155,231.1,118.6,112.5
+673,Sports,Water Bottle SeaShell 263,77.58,43.98,33.6
+674,Sports,Water Bottle PapayaWhip 987,257.58,153.12,104.46
+675,Sports,Cycling Helmet MediumSpringGreen 607,96.67,65.81,30.86
+676,Sports,Yoga Mat LightSkyBlue 835,78.93,48.69,30.24
+677,Sports,Water Bottle Lime 996,72.65,43.06,29.59
+678,Sports,Cycling Helmet LightCyan 189,14.55,11.06,3.49
+679,Sports,Dumbbell LightGoldenRodYellow 107,57.62,35.36,22.26
+680,Sports,Tennis Racket PaleGreen 443,123.64,75.28,48.36
+681,Sports,Water Bottle LawnGreen 766,262.47,157.68,104.79
+682,Sports,Yoga Mat LimeGreen 459,288.68,180.91,107.77
+683,Sports,Water Bottle SkyBlue 390,79.52,44.32,35.2
+684,Sports,Tennis Racket OrangeRed 780,77.26,39.44,37.82
+685,Fashion,T-shirt DarkOrchid 822,73.55,40.21,33.34
+686,Fashion,Jeans FireBrick 955,25.79,14.98,10.81
+687,Fashion,Socks DodgerBlue 956,32.54,20.6,11.94
+688,Fashion,Socks Crimson 461,162.55,89.04,73.51
+689,Fashion,Jeans HoneyDew 694,146.71,89.94,56.77
+690,Fashion,Jeans SteelBlue 309,65.07,41.83,23.24
+691,Fashion,Jeans SpringGreen 823,172.81,121.41,51.4
+692,Fashion,Sneakers Indigo 476,122.42,77.38,45.04
+693,Fashion,Dress RoyalBlue 317,55.28,37.73,17.55
+694,Fashion,Jeans MediumSeaGreen 625,175.5,94.21,81.29
+695,Fashion,T-shirt RoyalBlue 890,112.18,65.19,46.99
+696,Fashion,Socks Pink 681,81.88,57.09,24.79
+697,Fashion,Jeans DarkSlateGray 188,67.67,41.75,25.92
+698,Fashion,Hoodie GoldenRod 428,41.99,31.72,10.27
+699,Fashion,Jeans LemonChiffon 675,135.25,72.05,63.2
+700,Fashion,Sneakers DarkGoldenRod 297,162.59,118.29,44.3
+701,Fashion,T-shirt ForestGreen 395,145.99,76.85,69.14
+702,Fashion,Jeans MediumSpringGreen 464,164.83,102.14,62.69
+703,Fashion,Jacket DarkGoldenRod 743,170.12,108.76,61.36
+704,Fashion,Hoodie MediumAquaMarine 383,173.37,93.56,79.81
+705,Fashion,Jeans LawnGreen 779,13.68,9.63,4.05
+706,Fashion,Hoodie NavajoWhite 774,75.47,47.08,28.39
+707,Fashion,Hoodie LightGoldenRodYellow 967,142.26,81.73,60.53
+708,Fashion,Jacket Green 286,75.61,52.07,23.54
+709,Fashion,Sneakers Beige 851,30.12,23.31,6.81
+710,Fashion,Jeans PaleVioletRed 140,144.82,74.17,70.65
+711,Fashion,Dress OliveDrab 410,39.11,21.88,17.23
+712,Fashion,Jeans PaleVioletRed 418,81.1,41.5,39.6
+713,Fashion,Hoodie Violet 959,130.56,72.32,58.24
+714,Fashion,Jeans HoneyDew 360,117.47,83.99,33.48
+715,Fashion,Jacket OldLace 100,136.67,91.92,44.75
+716,Fashion,T-shirt LightPink 393,168.18,123.27,44.91
+717,Fashion,T-shirt MediumSlateBlue 812,176.02,118.91,57.11
+718,Fashion,T-shirt Chocolate 138,195.03,137.36,57.67
+719,Fashion,Socks SpringGreen 453,69.16,50.7,18.46
+720,Fashion,Hoodie LightSeaGreen 861,183.42,114.67,68.75
+721,Fashion,Jacket MistyRose 326,199.64,136.67,62.97
+722,Fashion,Sneakers DarkSalmon 534,109.25,66.06,43.19
+723,Fashion,Jacket SteelBlue 856,186.6,132.02,54.58
+724,Fashion,Hoodie Wheat 563,167.36,115.22,52.14
+725,Fashion,Dress IndianRed 538,18.43,13.08,5.35
+726,Fashion,Hoodie DarkGoldenRod 230,106.28,82.73,23.55
+727,Fashion,Jacket LightPink 819,154.29,79.17,75.12
+728,Fashion,Socks LightBlue 659,162.7,94.1,68.6
+729,Fashion,Jeans OliveDrab 656,194.13,134.19,59.94
+730,Fashion,Sneakers PaleGoldenRod 466,55.94,28.97,26.97
+731,Fashion,Sneakers RosyBrown 418,87.03,48.77,38.26
+732,Fashion,Jeans Plum 786,34.22,24.37,9.85
+733,Fashion,Jacket Magenta 627,53.67,30.73,22.94
+734,Fashion,Hoodie Beige 459,93.45,72.96,20.49
+735,Fashion,Hoodie DarkSalmon 245,65.48,50.12,15.36
+736,Fashion,Dress BlanchedAlmond 934,116.15,69.7,46.45
+737,Fashion,T-shirt Peru 273,113.27,82.48,30.79
+738,Fashion,Hoodie Sienna 572,135.97,92.41,43.56
+739,Fashion,Socks SlateGray 217,155.1,116.22,38.88
+740,Fashion,Hoodie AliceBlue 311,63.55,38.65,24.9
+741,Fashion,T-shirt Cornsilk 301,19.58,11.44,8.14
+742,Fashion,T-shirt OrangeRed 215,142.71,90.54,52.17
+743,Fashion,Jeans Wheat 471,70.3,45.03,25.27
+744,Fashion,Sneakers SeaGreen 111,40.27,21.0,19.27
+745,Fashion,Jacket RosyBrown 185,198.49,143.93,54.56
+746,Fashion,Hoodie LightBlue 677,145.69,115.69,30.0
+747,Fashion,Sneakers DarkMagenta 544,28.89,18.68,10.21
+748,Fashion,Jacket Ivory 108,44.44,29.46,14.98
+749,Fashion,Sneakers DeepSkyBlue 742,184.55,127.96,56.59
+750,Fashion,Dress DeepPink 357,187.57,130.51,57.06
+751,Fashion,Hoodie Turquoise 128,55.23,29.91,25.32
+752,Fashion,T-shirt DarkMagenta 403,156.69,117.81,38.88
+753,Fashion,Sneakers Salmon 966,43.66,30.19,13.47
+754,Fashion,Hoodie DarkBlue 950,40.34,29.67,10.67
+755,Fashion,Sneakers BlueViolet 288,150.53,90.02,60.51
+756,Fashion,Hoodie AliceBlue 477,166.46,99.22,67.24
+757,Fashion,Jeans DarkSalmon 951,113.82,69.52,44.3
+758,Fashion,Sneakers Lavender 680,53.96,27.65,26.31
+759,Fashion,Socks Blue 822,128.62,95.94,32.68
+760,Fashion,Jacket LimeGreen 606,181.8,142.44,39.36
+761,Fashion,Jacket DarkSalmon 406,103.91,56.86,47.05
+762,Fashion,Dress LightCoral 804,119.57,62.66,56.91
+763,Fashion,Jeans Wheat 511,39.42,24.95,14.47
+764,Fashion,T-shirt PowderBlue 590,195.98,148.0,47.98
+765,Fashion,Jeans DarkOliveGreen 132,49.91,30.53,19.38
+766,Fashion,Socks DarkGreen 623,125.26,93.95,31.31
+767,Fashion,Jacket Cornsilk 156,35.49,18.51,16.98
+768,Fashion,Dress Lime 164,144.47,110.84,33.63
+769,Fashion,Jacket Violet 280,9.69,7.62,2.07
+770,Fashion,Hoodie GoldenRod 553,39.58,23.3,16.28
+771,Fashion,Socks Orange 300,116.17,70.22,45.95
+772,Fashion,Jacket LightGoldenRodYellow 571,24.33,14.53,9.8
+773,Fashion,Jacket Ivory 986,194.49,150.27,44.22
+774,Fashion,Jeans AliceBlue 734,195.08,153.83,41.25
+775,Fashion,T-shirt Aqua 792,163.74,84.82,78.92
+776,Fashion,Sneakers WhiteSmoke 684,124.96,73.62,51.34
+777,Fashion,Jacket LimeGreen 762,190.94,123.01,67.93
+778,Fashion,Jeans Salmon 748,65.47,39.48,25.99
+779,Fashion,T-shirt LightSeaGreen 857,170.84,96.82,74.02
+780,Fashion,Jacket Maroon 692,140.74,76.57,64.17
+781,Fashion,Sneakers LemonChiffon 468,114.54,89.68,24.86
+782,Fashion,Dress Sienna 367,54.13,34.23,19.9
+783,Fashion,T-shirt Violet 307,51.63,40.82,10.81
+784,Fashion,Dress LavenderBlush 957,151.97,86.07,65.9
+785,Fashion,Sneakers LightBlue 786,132.74,73.84,58.9
+786,Fashion,Sneakers Black 569,144.15,81.89,62.26
+787,Fashion,Jeans PaleVioletRed 853,111.92,79.35,32.57
+788,Fashion,Dress Linen 971,182.58,122.34,60.24
+789,Fashion,Jacket Chartreuse 237,138.46,102.47,35.99
+790,Fashion,Socks Beige 958,104.6,68.22,36.38
+791,Fashion,Socks GoldenRod 838,190.03,130.74,59.29
+792,Fashion,Dress SpringGreen 501,27.6,20.67,6.93
+793,Fashion,Dress PeachPuff 676,40.88,32.21,8.67
+794,Fashion,Jacket Cyan 894,156.8,84.84,71.96
+795,Fashion,Dress LightCyan 481,19.05,10.88,8.17
+796,Fashion,T-shirt Khaki 318,10.91,7.4,3.51
+797,Fashion,Jacket Peru 536,65.59,46.72,18.87
+798,Fashion,T-shirt NavajoWhite 676,127.26,96.93,30.33
+799,Fashion,T-shirt Khaki 272,184.16,140.19,43.97
+800,Fashion,Sneakers Snow 881,151.12,91.04,60.08
+801,Fashion,Hoodie BlanchedAlmond 225,138.66,103.67,34.99
+802,Fashion,Jeans MediumSlateBlue 465,79.62,57.42,22.2
+803,Fashion,Hoodie PeachPuff 461,101.89,75.9,25.99
+804,Fashion,T-shirt MistyRose 717,76.3,45.64,30.66
+805,Fashion,T-shirt Orchid 348,14.56,11.26,3.3
+806,Fashion,Sneakers Gray 121,76.04,53.85,22.19
+807,Fashion,Socks AntiqueWhite 910,197.84,125.03,72.81
+808,Fashion,T-shirt LightSteelBlue 364,101.71,53.11,48.6
+809,Fashion,Jeans Tan 994,36.85,28.72,8.13
+810,Fashion,Hoodie CornflowerBlue 702,136.56,102.54,34.02
+811,Fashion,Sneakers GreenYellow 927,111.38,78.73,32.65
+812,Fashion,Sneakers Snow 450,190.16,95.87,94.29
+813,Fashion,Jeans Green 132,101.54,65.51,36.03
+814,Fashion,Socks Magenta 735,168.73,88.14,80.59
+815,Fashion,Socks GoldenRod 963,131.78,89.61,42.17
+816,Fashion,Jacket Lavender 559,193.77,137.17,56.6
+817,Fashion,Jacket SeaGreen 629,52.01,40.95,11.06
+818,Fashion,T-shirt Indigo 418,77.3,50.9,26.4
+819,Fashion,Jeans LightGray 273,121.13,62.15,58.98
+820,Fashion,Socks LightYellow 690,77.31,49.5,27.81
+821,Fashion,Jacket DarkMagenta 106,82.47,49.99,32.48
+822,Fashion,Sneakers Snow 121,119.2,71.54,47.66
+823,Fashion,Jeans GhostWhite 146,96.21,76.58,19.63
+824,Fashion,Hoodie Ivory 379,36.0,25.25,10.75
+825,Fashion,Jacket SlateBlue 368,60.48,39.31,21.17
+826,Fashion,Sneakers PapayaWhip 242,117.24,77.2,40.04
+827,Fashion,Hoodie Chartreuse 889,14.55,9.72,4.83
+828,Fashion,T-shirt DarkViolet 748,175.5,128.52,46.98
+829,Fashion,Dress OrangeRed 388,129.85,79.06,50.79
+830,Fashion,Socks CadetBlue 244,160.7,122.43,38.27
+831,Fashion,Hoodie HotPink 449,21.83,17.22,4.61
+832,Fashion,Hoodie Bisque 351,77.63,58.69,18.94
+833,Fashion,Sneakers DarkTurquoise 442,175.59,125.5,50.09
+834,Fashion,T-shirt PapayaWhip 901,143.21,100.47,42.74
+835,Fashion,Jacket CadetBlue 928,104.72,80.45,24.27
+836,Fashion,Jeans Chocolate 310,199.35,108.69,90.66
+837,Fashion,T-shirt GhostWhite 514,178.64,125.3,53.34
+838,Fashion,Jacket OrangeRed 272,84.05,61.5,22.55
+839,Fashion,Dress RoyalBlue 415,20.73,12.24,8.49
+840,Fashion,Sneakers Maroon 448,147.52,98.16,49.36
+841,Fashion,T-shirt DarkOliveGreen 181,184.88,124.79,60.09
+842,Fashion,Dress Cyan 579,42.32,28.53,13.79
+843,Fashion,Sneakers FireBrick 838,194.35,137.42,56.93
+844,Fashion,Socks MediumPurple 426,185.02,139.06,45.96
+845,Fashion,Jeans Gold 123,60.97,35.2,25.77
+846,Fashion,Socks GhostWhite 821,39.6,22.98,16.62
+847,Fashion,T-shirt Violet 305,49.92,30.94,18.98
+848,Fashion,Dress SeaGreen 201,62.27,40.51,21.76
+849,Fashion,Jeans BlanchedAlmond 232,54.41,28.13,26.28
+850,Fashion,Dress Magenta 935,17.33,9.05,8.28
+851,Fashion,Dress OldLace 292,73.5,39.76,33.74
+852,Fashion,Sneakers Navy 755,111.09,84.72,26.37
+853,Fashion,Sneakers MediumPurple 434,185.19,104.39,80.8
+854,Fashion,Socks Red 515,151.87,105.5,46.37
+855,Fashion,Dress FloralWhite 158,138.36,83.2,55.16
+856,Books,Paperback DarkMagenta 727,40.42,21.27,19.15
+857,Books,Paperback AliceBlue 509,39.47,31.43,8.04
+858,Books,Paperback Cyan 126,47.19,35.96,11.23
+859,Books,Paperback LightSeaGreen 157,29.51,23.5,6.01
+860,Books,Paperback Cyan 437,31.86,22.85,9.01
+861,Books,Hardcover MediumVioletRed 246,7.39,4.04,3.35
+862,Books,E-book PeachPuff 933,39.06,20.58,18.48
+863,Books,Paperback DarkRed 702,22.89,15.14,7.75
+864,Books,E-book HoneyDew 688,10.21,8.11,2.1
+865,Books,Paperback Olive 932,13.81,9.47,4.34
+866,Books,E-book MintCream 762,25.45,12.97,12.48
+867,Books,Paperback Magenta 823,33.63,22.36,11.27
+868,Books,Paperback Plum 642,29.29,17.82,11.47
+869,Books,Paperback DarkCyan 587,9.2,4.62,4.58
+870,Books,Hardcover BurlyWood 471,33.8,24.75,9.05
+871,Books,Hardcover Sienna 874,49.51,28.14,21.37
+872,Books,Hardcover Gray 225,47.04,32.33,14.71
+873,Books,Hardcover Navy 896,28.53,16.02,12.51
+874,Books,Hardcover Yellow 855,15.18,10.35,4.83
+875,Books,Hardcover RosyBrown 976,45.43,34.58,10.85
+876,Books,Hardcover GoldenRod 826,27.84,16.85,10.99
+877,Books,Hardcover MediumBlue 318,23.75,18.0,5.75
+878,Books,E-book Moccasin 498,45.88,35.34,10.54
+879,Books,Paperback Sienna 127,12.97,9.56,3.41
+880,Books,Hardcover Black 926,34.02,17.17,16.85
+881,Books,E-book PaleVioletRed 459,45.94,32.26,13.68
+882,Books,Hardcover LightBlue 484,13.72,8.41,5.31
+883,Books,E-book PaleGreen 357,32.47,18.42,14.05
+884,Books,Hardcover BlueViolet 336,15.33,9.66,5.67
+885,Books,Paperback OldLace 758,12.55,9.13,3.42
+886,Books,Paperback BlanchedAlmond 321,17.03,13.59,3.44
+887,Books,E-book SandyBrown 990,40.17,25.84,14.33
+888,Books,Paperback Coral 407,47.85,25.88,21.97
+889,Books,Paperback Chocolate 993,7.16,3.59,3.57
+890,Books,Hardcover LightCyan 711,10.6,7.47,3.13
+891,Books,Paperback GoldenRod 900,12.97,6.69,6.28
+892,Books,Hardcover Coral 147,43.01,31.0,12.01
+893,Books,Paperback MediumSlateBlue 404,11.57,8.78,2.79
+894,Books,E-book MistyRose 109,4.15,2.21,1.94
+895,Books,Hardcover LightPink 853,45.85,25.0,20.85
+896,Books,Paperback MediumSeaGreen 799,7.58,4.17,3.41
+897,Books,Paperback Brown 781,7.24,4.36,2.88
+898,Books,E-book LightGray 133,21.64,13.0,8.64
+899,Books,E-book MediumAquaMarine 806,14.03,10.35,3.68
+900,Books,Hardcover LightSalmon 337,4.78,3.11,1.67
+901,Books,E-book Lime 120,23.23,12.35,10.88
+902,Books,Hardcover AliceBlue 999,49.57,29.49,20.08
+903,Books,Hardcover Coral 239,8.66,5.6,3.06
+904,Books,E-book Bisque 801,23.14,12.81,10.33
+905,Books,E-book Lavender 612,9.95,7.18,2.77
+906,Books,Hardcover DarkMagenta 179,27.91,20.98,6.93
+907,Books,Paperback Sienna 329,48.61,36.75,11.86
+908,Books,E-book SeaGreen 115,6.4,4.55,1.85
+909,Books,Paperback OliveDrab 301,15.64,12.35,3.29
+910,Books,E-book LightCoral 471,5.25,3.87,1.38
+911,Books,Paperback Plum 768,3.5,2.47,1.03
+912,Books,Paperback Snow 806,28.57,18.99,9.58
+913,Books,Paperback DarkSeaGreen 834,49.17,37.48,11.69
+914,Books,Paperback SpringGreen 529,21.77,12.96,8.81
+915,Books,Paperback Gainsboro 494,48.73,30.02,18.71
+916,Books,Paperback Aqua 750,40.78,31.38,9.4
+917,Books,Hardcover LimeGreen 360,14.24,9.26,4.98
+918,Books,E-book DeepPink 346,31.71,19.44,12.27
+919,Books,Hardcover LavenderBlush 735,34.18,17.98,16.2
+920,Books,Hardcover MediumOrchid 810,45.7,23.53,22.17
+921,Books,E-book MediumAquaMarine 662,18.25,12.66,5.59
+922,Books,E-book Salmon 100,17.83,14.11,3.72
+923,Books,Paperback MistyRose 622,38.07,28.78,9.29
+924,Books,Paperback Cyan 340,30.84,24.62,6.22
+925,Books,E-book Thistle 463,40.19,30.58,9.61
+926,Books,E-book Gray 372,6.01,4.76,1.25
+927,Books,E-book OrangeRed 173,34.0,25.43,8.57
+928,Books,E-book DimGray 727,40.47,28.3,12.17
+929,Books,Paperback LightBlue 978,15.33,11.53,3.8
+930,Books,E-book PaleTurquoise 684,19.35,13.1,6.25
+931,Books,Hardcover Coral 875,49.97,25.97,24.0
+932,Books,E-book BlanchedAlmond 273,20.11,11.29,8.82
+933,Books,Paperback SkyBlue 941,14.22,7.85,6.37
+934,Books,E-book YellowGreen 947,24.63,17.05,7.58
+935,Books,E-book MediumOrchid 490,43.79,22.46,21.33
+936,Books,Paperback DodgerBlue 225,42.11,31.39,10.72
+937,Books,Paperback Pink 205,10.23,5.89,4.34
+938,Books,Paperback DarkKhaki 633,19.76,14.64,5.12
+939,Books,Paperback Cornsilk 505,24.28,12.78,11.5
+940,Books,Paperback LightGray 560,49.86,35.33,14.53
+941,Books,E-book DarkBlue 877,25.48,18.84,6.64
+942,Books,E-book HoneyDew 475,10.04,7.07,2.97
+943,Books,Paperback DarkGray 479,27.47,15.69,11.78
+944,Books,E-book PeachPuff 118,18.98,11.66,7.32
+945,Books,E-book SpringGreen 159,12.44,8.35,4.09
+946,Books,E-book RosyBrown 381,11.39,8.15,3.24
+947,Books,Paperback ForestGreen 548,15.01,8.7,6.31
+948,Books,Hardcover Lavender 190,27.68,17.94,9.74
+949,Books,Hardcover DarkSlateBlue 397,9.03,7.11,1.92
+950,Books,E-book PapayaWhip 834,39.71,30.82,8.89
+951,Books,Paperback Salmon 871,20.66,10.59,10.07
+952,Books,Paperback LavenderBlush 722,48.58,30.57,18.01
+953,Books,Paperback WhiteSmoke 692,19.56,12.04,7.52
+954,Books,Hardcover DarkRed 972,46.47,25.91,20.56
+955,Books,E-book LightYellow 308,30.27,15.71,14.56
+956,Books,Paperback LightYellow 556,43.43,22.76,20.67
+957,Books,Paperback LightSeaGreen 758,21.48,13.41,8.07
+958,Books,Hardcover LightGreen 573,8.07,5.4,2.67
+959,Books,E-book Navy 584,42.46,26.51,15.95
+960,Books,Hardcover LightCyan 603,44.85,28.34,16.51
+961,Books,Hardcover LightGoldenRodYellow 786,27.05,20.22,6.83
+962,Books,Hardcover Gray 141,37.8,23.46,14.34
+963,Books,E-book Purple 496,16.82,10.08,6.74
+964,Books,Paperback LightBlue 178,8.55,4.84,3.71
+965,Books,E-book GhostWhite 190,41.42,21.97,19.45
+966,Books,Hardcover LemonChiffon 797,29.53,15.25,14.28
+967,Books,Hardcover LavenderBlush 156,36.42,23.48,12.94
+968,Books,E-book DeepSkyBlue 697,35.48,22.19,13.29
+969,Books,Hardcover LightSkyBlue 992,49.91,37.19,12.72
+970,Books,E-book Gold 630,9.84,5.91,3.93
+971,Books,Hardcover MediumOrchid 632,11.75,7.77,3.98
+972,Books,Paperback Coral 779,7.07,4.35,2.72
+973,Books,Paperback Orchid 530,29.12,19.02,10.1
+974,Books,E-book LightCoral 987,5.4,3.19,2.21
+975,Books,Paperback LemonChiffon 363,40.69,30.8,9.89
+976,Books,Paperback Tan 649,12.49,6.44,6.05
+977,Books,E-book Violet 600,20.57,13.15,7.42
+978,Books,E-book Lavender 920,30.44,18.56,11.88
+979,Books,Paperback DarkGreen 669,12.41,9.63,2.78
+980,Books,E-book SandyBrown 645,5.4,3.21,2.19
+981,Books,Hardcover Blue 431,22.22,14.88,7.34
+982,Books,Hardcover DarkKhaki 398,15.86,11.72,4.14
+983,Books,Hardcover AntiqueWhite 706,36.4,26.96,9.44
+984,Books,E-book Sienna 555,24.37,19.02,5.35
+985,Books,Hardcover Lavender 544,44.27,22.9,21.37
+986,Books,E-book RosyBrown 173,8.85,4.79,4.06
+987,Books,E-book Navy 838,26.37,13.3,13.07
+988,Books,E-book BlueViolet 326,37.65,20.68,16.97
+989,Books,E-book LightYellow 921,36.86,26.71,10.15
+990,Books,Hardcover Lavender 896,28.12,15.4,12.72
+991,Books,E-book DarkOrchid 197,12.72,6.74,5.98
+992,Books,Hardcover BurlyWood 524,39.86,31.3,8.56
+993,Books,Hardcover Gold 553,33.97,19.61,14.36
+994,Books,E-book GoldenRod 812,22.96,17.46,5.5
+995,Books,Hardcover Crimson 400,4.96,3.72,1.24
+996,Books,Hardcover Navy 823,44.11,32.6,11.51
+997,Books,E-book Thistle 364,36.81,21.82,14.99
+998,Books,Paperback Fuchsia 918,28.79,16.25,12.54
+999,Books,E-book RosyBrown 133,49.06,30.29,18.77
+1000,Books,Paperback LightGoldenRodYellow 328,20.86,14.44,6.42
+1001,Books,E-book AntiqueWhite 575,28.65,15.13,13.52
+1002,Books,Hardcover DarkMagenta 795,37.23,23.42,13.81
+1003,Books,Paperback MediumVioletRed 225,8.38,6.27,2.11
+1004,Books,E-book IndianRed 636,46.4,37.07,9.33
+1005,Books,E-book Blue 118,6.43,4.16,2.27
+1006,Books,Paperback NavajoWhite 305,44.8,34.67,10.13
+1007,Books,Paperback MediumSpringGreen 697,16.16,9.55,6.61
+1008,Books,E-book DarkTurquoise 581,38.54,21.6,16.94
+1009,Books,Paperback Brown 332,39.09,28.52,10.57
+1010,Books,E-book GreenYellow 713,46.46,23.68,22.78
+1011,Books,Hardcover LightCyan 255,48.47,29.24,19.23
+1012,Books,E-book Blue 458,17.1,9.43,7.67
+1013,Books,Paperback GreenYellow 472,25.61,15.34,10.27
+1014,Books,Hardcover Aqua 928,8.15,6.11,2.04
+1015,Books,Hardcover MediumOrchid 864,37.01,23.56,13.45
+1016,Books,E-book PaleTurquoise 502,8.31,4.56,3.75
+1017,Books,Paperback Navy 693,4.69,2.4,2.29
+1018,Books,Hardcover GhostWhite 525,22.41,15.89,6.52
+1019,Books,E-book Magenta 845,42.35,22.14,20.21
+1020,Books,E-book Crimson 778,37.51,22.8,14.71
+1021,Books,Hardcover GreenYellow 994,18.59,13.99,4.6
+1022,Books,Paperback BlanchedAlmond 209,17.26,9.98,7.28
+1023,Books,Hardcover Snow 648,8.5,5.52,2.98
+1024,Books,E-book SkyBlue 267,8.53,5.46,3.07
+1025,Books,E-book Coral 475,28.17,18.37,9.8
+1026,Books,Hardcover PaleTurquoise 230,16.32,10.88,5.44
+1027,Toys,Board Game DarkGreen 345,59.77,39.47,20.3
+1028,Toys,Puzzle Orchid 600,7.12,5.57,1.55
+1029,Toys,Building Blocks DeepSkyBlue 189,21.61,15.63,5.98
+1030,Toys,Board Game White 131,17.37,10.06,7.31
+1031,Toys,Doll DarkGoldenRod 398,35.1,23.01,12.09
+1032,Toys,Building Blocks DodgerBlue 692,71.9,37.77,34.13
+1033,Toys,Board Game Orchid 902,23.31,15.82,7.49
+1034,Toys,Building Blocks LightPink 351,58.6,30.39,28.21
+1035,Toys,Puzzle PaleTurquoise 142,50.34,40.01,10.33
+1036,Toys,Board Game LightSkyBlue 934,51.75,36.62,15.13
+1037,Toys,Action Figure Linen 572,31.31,23.27,8.04
+1038,Toys,Building Blocks PapayaWhip 521,74.14,37.31,36.83
+1039,Toys,Doll CadetBlue 251,8.39,6.18,2.21
+1040,Toys,Building Blocks Magenta 452,56.23,30.67,25.56
+1041,Toys,Board Game MintCream 802,21.08,16.39,4.69
+1042,Toys,Action Figure PapayaWhip 102,58.44,30.39,28.05
+1043,Toys,Doll PapayaWhip 437,8.79,5.78,3.01
+1044,Toys,Puzzle Azure 303,61.61,42.57,19.04
+1045,Toys,Puzzle Moccasin 194,68.58,50.47,18.11
+1046,Toys,Action Figure Gray 604,49.13,36.41,12.72
+1047,Toys,Doll OrangeRed 410,15.99,11.97,4.02
+1048,Toys,Puzzle PaleGreen 921,61.13,45.83,15.3
+1049,Toys,Building Blocks GreenYellow 755,18.19,11.2,6.99
+1050,Toys,Building Blocks AntiqueWhite 644,28.12,22.17,5.95
+1051,Toys,Puzzle PowderBlue 921,11.03,8.11,2.92
+1052,Toys,Action Figure DimGray 345,61.55,46.42,15.13
+1053,Toys,Board Game Peru 998,49.48,33.08,16.4
+1054,Toys,Doll DarkOrange 827,48.55,37.87,10.68
+1055,Toys,Puzzle DarkGoldenRod 912,35.01,25.74,9.27
+1056,Toys,Action Figure PaleGreen 189,67.11,41.73,25.38
+1057,Toys,Board Game Moccasin 447,54.28,40.76,13.52
+1058,Toys,Building Blocks Salmon 412,72.91,45.79,27.12
+1059,Toys,Puzzle DodgerBlue 213,28.23,19.23,9.0
+1060,Toys,Doll DarkSeaGreen 568,36.98,25.2,11.78
+1061,Toys,Board Game Aquamarine 462,30.82,17.39,13.43
+1062,Toys,Doll CadetBlue 399,68.5,46.98,21.52
+1063,Toys,Action Figure DarkTurquoise 818,12.51,7.27,5.24
+1064,Toys,Doll Orchid 347,36.15,23.91,12.24
+1065,Toys,Puzzle DarkCyan 484,22.01,15.15,6.86
+1066,Toys,Board Game NavajoWhite 254,34.84,20.9,13.94
+1067,Toys,Action Figure Tan 935,18.39,11.13,7.26
+1068,Toys,Building Blocks FloralWhite 415,71.27,56.17,15.1
+1069,Toys,Doll DarkViolet 909,29.57,22.56,7.01
+1070,Toys,Building Blocks MediumVioletRed 266,20.02,15.0,5.02
+1071,Toys,Doll LightSkyBlue 279,45.01,22.51,22.5
+1072,Toys,Puzzle DodgerBlue 928,75.93,48.32,27.61
+1073,Toys,Action Figure Turquoise 665,60.51,42.53,17.98
+1074,Toys,Building Blocks FloralWhite 871,55.29,29.88,25.41
+1075,Toys,Action Figure CornflowerBlue 738,55.31,28.91,26.4
+1076,Toys,Action Figure DarkMagenta 470,38.86,30.6,8.26
+1077,Toys,Action Figure OliveDrab 484,54.93,37.88,17.05
+1078,Toys,Building Blocks SlateGray 770,65.84,34.1,31.74
+1079,Toys,Doll Gray 118,42.51,30.07,12.44
+1080,Toys,Puzzle LimeGreen 221,70.77,54.24,16.53
+1081,Toys,Building Blocks DarkSalmon 624,33.91,20.12,13.79
+1082,Toys,Board Game Brown 135,59.94,43.45,16.49
+1083,Toys,Action Figure SkyBlue 377,41.7,20.94,20.76
+1084,Toys,Board Game Maroon 620,19.89,15.42,4.47
+1085,Toys,Puzzle CadetBlue 703,79.83,44.07,35.76
+1086,Toys,Action Figure Orange 891,52.42,30.01,22.41
+1087,Toys,Building Blocks DarkCyan 517,7.91,5.26,2.65
+1088,Toys,Puzzle DodgerBlue 489,65.56,46.09,19.47
+1089,Toys,Doll Indigo 807,77.26,55.08,22.18
+1090,Toys,Action Figure PaleGreen 607,29.99,22.49,7.5
+1091,Toys,Puzzle Gray 243,64.73,39.11,25.62
+1092,Toys,Board Game Sienna 266,44.18,33.72,10.46
+1093,Toys,Action Figure Gainsboro 419,60.64,33.42,27.22
+1094,Toys,Puzzle IndianRed 895,49.46,39.14,10.32
+1095,Toys,Action Figure BlueViolet 416,77.2,42.93,34.27
+1096,Toys,Doll PaleGoldenRod 548,20.6,12.28,8.32
+1097,Toys,Doll Tomato 503,14.02,8.1,5.92
+1098,Toys,Action Figure DimGray 373,34.53,27.25,7.28
+1099,Toys,Puzzle OliveDrab 561,21.09,16.29,4.8
+1100,Toys,Building Blocks MintCream 897,67.95,46.96,20.99
+1101,Toys,Action Figure DarkRed 648,9.25,5.4,3.85
+1102,Toys,Doll DeepPink 521,54.94,41.45,13.49
+1103,Toys,Puzzle LightBlue 505,26.38,16.06,10.32
+1104,Toys,Building Blocks GoldenRod 224,66.01,49.87,16.14
+1105,Toys,Action Figure BlueViolet 644,39.27,19.77,19.5
+1106,Toys,Building Blocks Blue 468,28.61,19.47,9.14
+1107,Toys,Action Figure MediumBlue 996,78.56,60.16,18.4
+1108,Toys,Building Blocks DarkOrchid 948,13.13,8.94,4.19
+1109,Toys,Doll Orange 414,67.75,48.34,19.41
+1110,Toys,Board Game SaddleBrown 749,53.71,42.44,11.27
+1111,Toys,Puzzle Linen 908,63.32,39.15,24.17
+1112,Toys,Action Figure PeachPuff 444,35.6,23.14,12.46
+1113,Toys,Action Figure Linen 246,70.01,49.96,20.05
+1114,Toys,Building Blocks LightBlue 395,60.44,37.72,22.72
+1115,Toys,Board Game Peru 523,21.77,15.34,6.43
+1116,Toys,Puzzle Orange 783,43.16,32.61,10.55
+1117,Toys,Board Game NavajoWhite 687,48.76,30.29,18.47
+1118,Toys,Action Figure RosyBrown 973,64.11,45.12,18.99
+1119,Toys,Board Game SteelBlue 872,17.19,12.06,5.13
+1120,Toys,Board Game Purple 134,43.04,33.12,9.92
+1121,Toys,Doll Fuchsia 821,71.02,38.31,32.71
+1122,Toys,Doll Beige 168,51.31,29.89,21.42
+1123,Toys,Building Blocks AliceBlue 722,50.76,33.13,17.63
+1124,Toys,Board Game SlateGray 468,72.89,43.21,29.68
+1125,Toys,Building Blocks SeaGreen 468,78.14,57.87,20.27
+1126,Toys,Puzzle LavenderBlush 958,57.76,30.13,27.63
+1127,Toys,Action Figure RosyBrown 882,22.16,14.12,8.04
+1128,Toys,Board Game Salmon 556,39.07,25.44,13.63
+1129,Toys,Building Blocks Fuchsia 140,47.06,34.93,12.13
+1130,Toys,Building Blocks Sienna 329,67.23,35.84,31.39
+1131,Toys,Action Figure PaleGoldenRod 438,52.58,31.65,20.93
+1132,Toys,Building Blocks DarkMagenta 912,48.07,27.18,20.89
+1133,Toys,Board Game CornflowerBlue 691,26.85,21.27,5.58
+1134,Toys,Building Blocks DarkSalmon 277,58.77,33.32,25.45
+1135,Toys,Puzzle MintCream 483,66.0,38.31,27.69
+1136,Toys,Puzzle Plum 191,76.63,44.61,32.02
+1137,Toys,Building Blocks Moccasin 702,14.32,8.84,5.48
+1138,Toys,Doll DarkGoldenRod 156,22.74,17.29,5.45
+1139,Toys,Action Figure Red 357,77.14,46.19,30.95
+1140,Toys,Puzzle Tan 541,53.49,35.98,17.51
+1141,Toys,Doll Teal 732,77.72,59.39,18.33
+1142,Toys,Doll BlueViolet 214,20.11,13.77,6.34
+1143,Toys,Doll BlueViolet 178,18.25,13.28,4.97
+1144,Toys,Building Blocks DarkSeaGreen 909,7.22,5.29,1.93
+1145,Toys,Board Game DarkBlue 873,63.23,35.43,27.8
+1146,Toys,Action Figure Maroon 857,61.33,48.11,13.22
+1147,Toys,Building Blocks Teal 310,59.24,30.73,28.51
+1148,Toys,Doll Cyan 839,6.96,5.28,1.68
+1149,Toys,Building Blocks CadetBlue 267,25.52,15.48,10.04
+1150,Toys,Building Blocks Tan 413,52.78,42.09,10.69
+1151,Toys,Puzzle OldLace 463,9.27,5.12,4.15
+1152,Toys,Doll DarkSlateBlue 565,72.52,53.76,18.76
+1153,Toys,Puzzle Bisque 472,31.38,23.77,7.61
+1154,Toys,Doll Coral 445,41.97,22.03,19.94
+1155,Toys,Action Figure DarkOliveGreen 231,41.24,30.79,10.45
+1156,Toys,Puzzle GoldenRod 498,45.09,25.94,19.15
+1157,Toys,Board Game DarkSeaGreen 297,32.18,22.43,9.75
+1158,Toys,Action Figure SlateGray 547,75.95,60.32,15.63
+1159,Toys,Doll LightSlateGray 547,17.91,13.77,4.14
+1160,Toys,Board Game FireBrick 845,16.24,8.66,7.58
+1161,Toys,Building Blocks Indigo 932,45.31,23.03,22.28
+1162,Toys,Puzzle Coral 686,40.31,20.68,19.63
+1163,Toys,Building Blocks MediumVioletRed 446,73.63,55.78,17.85
+1164,Toys,Building Blocks LightCoral 887,47.41,30.27,17.14
+1165,Toys,Board Game DimGray 463,6.54,3.67,2.87
+1166,Toys,Doll MediumBlue 998,71.16,37.67,33.49
+1167,Toys,Board Game LightSalmon 685,75.92,47.98,27.94
+1168,Toys,Building Blocks SaddleBrown 550,74.12,52.3,21.82
+1169,Toys,Puzzle DarkTurquoise 982,48.19,34.49,13.7
+1170,Toys,Doll LightCyan 982,18.5,12.87,5.63
+1171,Toys,Board Game SteelBlue 583,59.05,37.84,21.21
+1172,Toys,Building Blocks Silver 713,16.49,12.74,3.75
+1173,Toys,Doll HoneyDew 334,10.64,6.08,4.56
+1174,Toys,Puzzle LightGray 943,35.03,25.8,9.23
+1175,Toys,Board Game Tan 139,52.91,38.23,14.68
+1176,Toys,Board Game LavenderBlush 921,12.94,10.26,2.68
+1177,Toys,Puzzle MediumAquaMarine 346,8.82,4.54,4.28
+1178,Toys,Board Game Navy 669,63.38,32.53,30.85
+1179,Toys,Building Blocks Blue 257,74.03,42.85,31.18
+1180,Toys,Doll Gray 206,7.35,5.34,2.01
+1181,Toys,Puzzle Gainsboro 266,19.83,14.72,5.11
+1182,Toys,Building Blocks PaleGreen 905,43.9,23.34,20.56
+1183,Toys,Doll DodgerBlue 971,73.81,36.96,36.85
+1184,Toys,Puzzle LightSeaGreen 614,47.14,35.19,11.95
+1185,Toys,Building Blocks MediumOrchid 918,51.87,35.19,16.68
+1186,Toys,Building Blocks OldLace 658,11.74,6.06,5.68
+1187,Toys,Building Blocks FloralWhite 107,27.53,17.04,10.49
+1188,Toys,Building Blocks LightGray 949,61.13,31.01,30.12
+1189,Toys,Building Blocks DarkOrange 225,66.05,42.1,23.95
+1190,Toys,Board Game Wheat 727,55.71,44.29,11.42
+1191,Toys,Puzzle BurlyWood 196,46.41,28.11,18.3
+1192,Toys,Puzzle MistyRose 968,60.03,45.32,14.71
+1193,Toys,Puzzle RoyalBlue 416,12.64,7.36,5.28
+1194,Toys,Action Figure Turquoise 442,16.94,11.55,5.39
+1195,Toys,Board Game DarkKhaki 216,6.51,3.4,3.11
+1196,Toys,Building Blocks LightCoral 517,21.83,13.44,8.39
+1197,Toys,Building Blocks WhiteSmoke 876,48.51,27.32,21.19
