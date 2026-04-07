@@ -22,7 +22,6 @@ from orchestration.graph import build_graph
 from orchestration.orchestrator_agent import OrchestratorAgent
 from orchestration.validator_agent import CorrectiveValidationAgent
 
-from logs.logger import log_event
 
 
 ROOT = Path(__file__).resolve().parent
@@ -217,20 +216,8 @@ if __name__ == "__main__":
         fr = result.get("final_response") or {}
         _print_answer(fr)
 
-        # Log event
-        log_event({
-            "type": "query_run",
-            "query": raw_input,
-            "history_turns": len(conversation_history) // 2,
-            "final_response": fr,
-        })
 
         val = fr.get("validation") or {}
-        if val.get("status") in ("NEEDS_MORE_INFO", "FAIL"):
-            log_event(
-                {"type": "validation_issue", "query": raw_input, "validation": val},
-                filename="validation.jsonl",
-            )
 
         # ── update conversation history ──────────────────────────────────────
         answer_str = _answer_to_str(fr.get("answer"))
