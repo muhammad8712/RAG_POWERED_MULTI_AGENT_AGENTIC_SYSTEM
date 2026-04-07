@@ -445,7 +445,7 @@ def render_detail_table(scored: list[dict]):
     styled = (
         filtered[display_cols]
         .style
-        .applymap(highlight_label, subset=["label"])
+        .map(highlight_label, subset=["label"])
     )
     st.dataframe(styled, use_container_width=True, height=500)
 
