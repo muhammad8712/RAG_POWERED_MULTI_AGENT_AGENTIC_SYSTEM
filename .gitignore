@@ -29,7 +29,6 @@ erp.db-wal
 logs/
 storage/vector_store/
 vector_store/
-evaluation/results/
 
 # Streamlit
 .streamlit/secrets.toml
