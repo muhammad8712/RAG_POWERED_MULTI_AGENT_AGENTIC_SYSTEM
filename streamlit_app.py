@@ -382,29 +382,7 @@ def init_demo_data() -> dict:
     }
 
 
-def log_event(event: dict, filename: str = "events.jsonl"):
-    log_dir = ROOT / "logs"
-    path = log_dir / filename
 
-    payload = {"ts_utc": datetime.utcnow().isoformat(), **event}
-
-    def to_json_safe(obj):
-        try:
-            import numpy as _np
-            if isinstance(obj, _np.generic):
-                return obj.item()
-            if isinstance(obj, _np.ndarray):
-                return obj.tolist()
-        except Exception:
-            pass
-        return str(obj)
-
-    try:
-        log_dir.mkdir(parents=True, exist_ok=True)
-        with path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(payload, ensure_ascii=False, default=to_json_safe) + "\n")
-    except Exception:
-        pass  # Logging is best-effort; never crash the app over a log write
 
 
 # ---------------------------------------------------------------------------
@@ -673,21 +651,8 @@ if query and query.strip():
 
         raw = graph.invoke(invoke_payload)
 
-    log_event({
-        "type": "query_run",
-        "query": query.strip(),
-        "history_turns": len(st.session_state["conversation_history"]) // 2,
-        "final_response": raw.get("final_response"),
-    })
 
     fr_tmp = raw.get("final_response") or {}
-    val = fr_tmp.get("validation") or {}
-    if val.get("status") in ("NEEDS_MORE_INFO", "FAIL"):
-        log_event(
-            {"type": "validation_issue", "query": query.strip(), "validation": val},
-            filename="validation.jsonl",
-        )
-
     answer_str = _answer_to_str(fr_tmp.get("answer"))
     st.session_state["conversation_history"].append(
         {"role": "user", "content": query.strip()}
