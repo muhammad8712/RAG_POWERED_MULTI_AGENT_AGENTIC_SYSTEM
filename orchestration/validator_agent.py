@@ -108,6 +108,7 @@ class CorrectiveValidationAgent:
 
         doc_out = state.get("document_output") or {}
         db_out = state.get("database_output") or {}
+        api_out = state.get("api_output") or {}
         reasoning_out = state.get("reasoning_output") or {}
 
         doc_scores = doc_out.get("similarity_scores") or []
@@ -251,6 +252,43 @@ class CorrectiveValidationAgent:
                         }
                     )
                     next_actions.append({"tool": "database", "args": {"question": query}})
+
+        # ── API validation (API_QUERY / API_COMPOSITE_QUERY only) ────────────────────
+        # Only fires when the orchestrator actually routed through the API node.
+        # Checks: (1) no connection/HTTP error, (2) HTTP 200, (3) non-empty result.
+        # If any check fails we add an issue + a retry action so the corrective
+        # loop can attempt the call again (capped by max_iters).
+        if intent in ("API_QUERY", "API_COMPOSITE_QUERY") and api_out:
+            api_error       = api_out.get("error")
+            api_status_code = api_out.get("status_code")
+            api_result      = api_out.get("result")
+
+            if api_error:
+                issues.append(
+                    {
+                        "type":   "api_error",
+                        "detail": f"API call failed: {api_error}",
+                    }
+                )
+                next_actions.append({"tool": "api", "args": {"query": query}})
+
+            elif api_status_code is not None and api_status_code != 200:
+                issues.append(
+                    {
+                        "type":   "api_bad_status",
+                        "detail": f"API returned HTTP {api_status_code} (expected 200)",
+                    }
+                )
+                next_actions.append({"tool": "api", "args": {"query": query}})
+
+            elif not api_result:
+                issues.append(
+                    {
+                        "type":   "api_empty_result",
+                        "detail": "API responded but returned no data.",
+                    }
+                )
+                next_actions.append({"tool": "api", "args": {"query": query}})
 
         # ── numeric grounding ────────────────────────────────────────────────
         if self.require_evidence_for_numbers and self._contains_numbers(draft):

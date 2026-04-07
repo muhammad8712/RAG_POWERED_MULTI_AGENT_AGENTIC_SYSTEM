@@ -11,6 +11,7 @@ from datetime import datetime
 from typing import Any
 
 from dotenv import load_dotenv
+from utils.api_server_manager import ensure_api_server
 from sqlalchemy import create_engine
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -146,8 +147,11 @@ def main() -> None:
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # ── Check mock ERP API server before running ───────────────────────────────
-    _check_api_server(ERP_API_URL)
+    # ── Ensure mock ERP API server is running (auto-starts if needed) ──────────
+    try:
+        ensure_api_server(verbose=True)
+    except RuntimeError as e:
+        print(f"\n[WARNING] {e}\n  API queries (Q106-Q120) will record errors but eval will continue.\n")
 
     queries = json.loads(QUERIES_PATH.read_text(encoding="utf-8-sig"))
     graph = build_system()
